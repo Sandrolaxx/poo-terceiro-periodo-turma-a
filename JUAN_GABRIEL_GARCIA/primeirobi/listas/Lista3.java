@@ -2,7 +2,7 @@ package primeirobi.listas;
 
 import java.util.Scanner;
 
-public class Lista2 {
+public class Lista3 {
 
     /*
      * Dona Gabrielinha ficou muito feliz com o software desenvolvido, porém, na
@@ -36,16 +36,17 @@ public class Lista2 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        int contador = 0, tamanho = 0;
-        float valor_planta, valor_recebido, diferenca_desconto = 0, valor_desconto, valor_total, qnt_planta;
+        int contador = 0, tamanho = 0, dia, mes;
+        float valor_planta, valor_recebido, diferenca_desconto = 0, valor_desconto, valor_total, qnt_planta, vendas_dia = 0;
         float[] vetor_plantas = new float[100];
         float[] vetor_venda = new float[100];
         float[] vetor_desconto = new float[100];
+        float[][] matriz_vendas = new float[13][31]; // Se deixar 12 e 30 ele da exception out of bounds
 
-        while (contador != 4) {
+        while (contador != 6) {
 
             System.out.println(
-                    "\n Escolha uma opção: \n 1: Calcular preco \n 2: Calcular troco \n 3: Registro de vendas \n 4: Sair \n");
+                    "\n Escolha uma opção: \n 1: Calcular preco \n 2: Calcular troco \n 3: Registro de vendas \n 4: Resgistrar valor total de vendas em um dia \n 5: Buscar Quantidade de vendas um um dia especifico \n 6: Sair \n");
             contador = scan.nextInt();
             scan.nextLine();
 
@@ -70,7 +71,6 @@ public class Lista2 {
 
                             valor_desconto = valor_total * 0.95f;
                             diferenca_desconto = valor_total - valor_desconto;
-
                             System.out
                                     .println("O valor total a ser pago, com 10% de desconto é de R$:" + valor_desconto);
                             vetor_plantas[tamanho] = qnt_planta;
@@ -121,6 +121,57 @@ public class Lista2 {
                     break;
 
                 case 4:
+                    
+                    System.out.println("Qual o valor total das vendas? \n");
+                    vendas_dia = scan.nextFloat();
+
+                    
+                    System.out.println("Que mês voce deseja salvar?");
+                    mes = scan.nextInt();
+
+                    if (mes > 0 && mes < 13) {
+
+                        System.out.println("Que dia voce deseja salvar?");
+                        dia = scan.nextInt();
+
+                        if (dia > 0 && dia < 31) {
+
+                            matriz_vendas[mes][dia] = vendas_dia;
+
+                        }
+                        else {
+                            System.out.println("DIA INVÁLIDO");
+                        }
+                    }
+                    else {
+                        System.out.println("MÊS INVÁLIDO");
+                    }
+                    break;
+
+                case 5:
+
+                System.out.println("Que mês voce deseja buscar?");
+                mes = scan.nextInt();
+
+                if (mes > 0 && mes < 13) {
+
+                    System.out.println("Que dia voce deseja salvar?");
+                    dia = scan.nextInt();
+
+                    if (dia > 0 && dia < 31) {
+
+                    System.out.println("No dia "+ dia + " do mês " + mes + " Voce registrou um valor total de vendas de R$:" + matriz_vendas[mes][dia]);
+
+                    }
+                    else {
+                        System.out.println("DIA INVÁLIDO");
+                    }
+                }
+                else {
+                    System.out.println("MÊS INVÁLIDO");
+                }
+                    break;
+                case 6:
 
                     System.out.println("Encerrando sistema");
 
