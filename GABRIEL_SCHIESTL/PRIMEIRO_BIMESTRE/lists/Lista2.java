@@ -1,4 +1,4 @@
-package PRIMEIRO_BIMESTRE;
+package PRIMEIRO_BIMESTRE.lists;
 
 import java.util.Scanner;
 
