@@ -1,10 +1,9 @@
 package primeirobi;
 
 import java.time.LocalDate;
-
 import java.util.Scanner;
 
-public class Calculadora 
+public class teste 
 {
     public static void main(String[] args) 
     {
