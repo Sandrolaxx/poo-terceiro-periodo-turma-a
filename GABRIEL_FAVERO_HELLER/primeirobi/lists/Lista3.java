@@ -127,7 +127,8 @@ public class Lista3 {
         if (matrizDiaMes[mes - 1][dia - 1] == 0) {
             System.out.println("Não há nenhum registro de valor salvo nesse dia!");
         } else {
-            System.out.println("O valor armazenado no dia " + dia + " do mês " + mes + " é: R$" + matrizDiaMes[mes - 1][dia - 1]);
+            System.out.println(
+                    "O valor armazenado no dia " + dia + " do mês " + mes + " é: R$" + matrizDiaMes[mes - 1][dia - 1]);
         }
     }
 }
