@@ -1,10 +1,10 @@
-package primeirobi;
+package primeirobi.atividades;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class CalculadoraGab2 {
+public class atividadeExtra01 {
     // Lista para armazenar as vendas realizadas
     private static List<Venda> registroVendas = new ArrayList<>();
 
@@ -52,7 +52,7 @@ public class CalculadoraGab2 {
 
         double totalPrice = quantity * unitPrice;
 
-        // Verifica se tm desconto especial
+        // Verifica se tem desconto especial
         if (quantity > 10) {
             double discount = 0.05 * totalPrice;
             totalPrice -= discount;
@@ -84,6 +84,12 @@ public class CalculadoraGab2 {
         registroVendas.add(new Venda(quantidade, precoTotal));
 
         System.out.println("Venda registrada com sucesso!");
+    }
+
+    public static double somarTotalVendas() {
+        return registroVendas.stream()
+                .mapToDouble(Venda::getPrecoTotal)
+                .sum();
     }
 }
 

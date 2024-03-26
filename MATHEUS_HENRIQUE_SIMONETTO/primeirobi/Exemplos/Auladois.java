@@ -1,4 +1,4 @@
-package primeirobi.Exemplos;
+package primeirobi.exemplos;
 
 public class Auladois {
     
