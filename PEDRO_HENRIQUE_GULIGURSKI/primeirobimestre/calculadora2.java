@@ -31,7 +31,7 @@ public class calculadora2 {
         matriz[linhaAtual][2] = item3;
         matriz[linhaAtual][3] = item4;
     }
-    
+
     public static void exibirLista(float[][] matriz) {
         limparTerminal(); 
         for (int l = 0; l < matriz.length; l++) {
@@ -41,7 +41,7 @@ public class calculadora2 {
             System.out.println("--------------------------------");
             System.out.println("Produto " + l);
             for (int c = 0; c < matriz[l].length; c++) {
-                
+
                 if (c == 0) { // QtdProduto
                     System.out.println("Quantidade de Produtos: " + (int)matriz[l][c]);
                 } else if (c == 1) { // Valor Total
@@ -52,7 +52,7 @@ public class calculadora2 {
             }
         }
     }
-    
+
     public static void solicitaProduto(float[][] matriz, int linhaAtual) {
 
         Scanner input = new Scanner(System.in);
@@ -70,7 +70,7 @@ public class calculadora2 {
         } else {
             System.out.println("O valor total foi de R$" + valorTotal);
         }
-        
+
 
         System.out.println("Qual foi o valor pago?");
         float valorPago = input.nextInt();
