@@ -1,14 +1,20 @@
 import java.util.Scanner;
 
-public class trabalho2flores {
+public class trabalho3flores {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         boolean f3 = true;
 
-        float vetor[] = new float[50000];
+        float Vetor[] = new float[50000];
+        float Calendario[][] = new float[12][30];
+        float HistoMes[] = new float [12];
 
         int i = -1;
+
+        int Mes;
+
+        int Dia;
 
         while (f3) {
 
@@ -18,7 +24,8 @@ public class trabalho2flores {
             System.out.println("|escolha uma das seguinte opreações:   |\n");
             System.out.println("|(1)fazer uma venda                    |\n");
             System.out.println("|(2)Historico de compra                |\n");
-            System.out.println("|(3)sair do sistema                    |\n");
+            System.out.println("|(3)Historico de compra por dia        |\n");
+            System.out.println("|(4)sair do sistema                    |\n");
             System.out.println("|______________________________________|\n");
 
             int opc = scanner.nextInt();
@@ -66,13 +73,25 @@ public class trabalho2flores {
                             System.out.println("insira o valor do pagamento");
                             float Pagamento = scanner.nextFloat();
 
+                            System.out.println("digita o dia da compra(em números)");
+                            Dia = scanner.nextInt();
+                            Dia = Dia - 1;
+
+                            System.out.println("digita o mes da compra(em números)");
+                            Mes = scanner.nextInt();
+                            Mes = Mes - 1;
+
+                            HistoMes[Mes]= HistoMes[Mes] + Valortotal;
+
+                            Calendario[Mes][Dia] = Calendario[Mes][Dia] + Valortotal;
+
                             boolean f2 = true;
 
                             while (f2) {
 
                                 i = i + 1;
 
-                                vetor[i] = Valortotal;
+                                Vetor[i] = Valortotal;
 
                                 System.out.println("_______________________________________\n");
                                 System.out.println("|           SISTEMA DE VENDA          |\n");
@@ -118,26 +137,52 @@ public class trabalho2flores {
 
                     break;
 
-                case 3:
-                    System.out.println("saindo do sistema");
-                    f3 = false;
-                    scanner.close();
-
-                    break;
-
                 case 2:
 
                     boolean f5 = true;
 
                     int y = 0;
                     while (f5) {
-                        if (vetor[y] == 0.0) {
+                        if (Vetor[y] == 0.0) {
                             f5 = false;
                         } else {
-                            System.out.println("Histórico de compra " + (y + 1) + " = " + vetor[y]);
+                            System.out.println("Histórico de compra " + (y + 1) + " = " + Vetor[y]);
                         }
                         y++;
                     }
+
+                    break;
+
+                case 3:
+
+                    int Dia2 = 0;
+                    int Mes2 = 0;
+
+                    System.out.println("digita o dia(em números)");
+                    Dia2 = scanner.nextInt();
+                    Dia2 = Dia2 - 1;
+
+                    System.out.println("digita o mes(em números)");
+                    Mes2 = scanner.nextInt();
+                    Mes2 = Mes2 - 1;
+
+                    if (Calendario[Mes2][Dia2] == 0.0) {
+
+                        System.out.println("Sem vendas no dia");
+                        System.out.println("Total de vendas no mês:" + HistoMes[Mes2]);
+                    
+
+                    } else {
+                        System.out.println("Total de vendas no dia:" + Calendario[Mes2][Dia2]);
+                        System.out.println("Total de vendas no mês:" + HistoMes[Mes2]);
+                    }
+
+                    break;
+
+                case 4:
+                    System.out.println("saindo do sistema");
+                    f3 = false;
+                    scanner.close();
 
                     break;
 
