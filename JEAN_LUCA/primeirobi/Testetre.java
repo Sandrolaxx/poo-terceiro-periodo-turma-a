@@ -1,4 +1,5 @@
-public class Alltre {
+package primeirobi;
+public class Testetre {
 
 
     public static void main(String[] args) {
