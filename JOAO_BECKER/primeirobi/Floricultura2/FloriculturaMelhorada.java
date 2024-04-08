@@ -1,4 +1,4 @@
-package JOAO_BECKER.primeirobi.Floricultura2;
+package primeirobi.Floricultura2;
 import java.util.Scanner;
 public class FloriculturaMelhorada {
     public static void main(String[] args){

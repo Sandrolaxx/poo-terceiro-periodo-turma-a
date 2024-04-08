@@ -31,8 +31,8 @@ public class listatres {
         int menu;
         
         // Adicionando arrays para armazenar vendas mensais e diárias
-        int[][] vendasMensais = new int[12][30];
-        int[][] vendasDiarias = new int[30][12]; // Invertendo o tamanho da segunda dimensão
+        
+        int[][] vendasDiarias = new int[30][12]; // Matriz de dias e meses
 
         for (int i = 0; i < 3; i++) {
             System.out.println("Digite a quantidade de compras que você comprou:");
@@ -51,10 +51,10 @@ public class listatres {
             }
 
             // Salvar a venda na matriz de vendas diárias
-            System.out.println("Digite o dia do mês (1 a 30) e o mês (1 a 12):"); // Corrigido a ordem de entrada
+            System.out.println("Digite o dia do mês (1 a 30) e o mês (1 a 12):"); 
             int dia = scanner.nextInt();
             int mes = scanner.nextInt();
-            vendasDiarias[dia - 1][mes - 1] += vetorTotal[i]; // Subtraindo 1 para ajustar ao índice 0-based
+            vendasDiarias[dia - 1][mes - 1] += vetorTotal[i]; // Subtraindo 1 para ajustar ao índice 0
         }
 
         do {

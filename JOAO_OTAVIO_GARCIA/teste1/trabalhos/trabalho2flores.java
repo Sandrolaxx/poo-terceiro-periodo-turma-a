@@ -8,6 +8,8 @@ public class trabalho2flores {
 
         float vetor[] = new float[50000];
 
+        int i = -1;
+
         while (f3) {
 
             System.out.println("________________________________________\n");
@@ -34,11 +36,11 @@ public class trabalho2flores {
                         if (Quantplant > 0) {
                             float Valortotal = 0;
                             float Valor = 0;
-                            for (int i = 0; i < Quantplant; i++) {
+                            for (int p = 0; p < Quantplant; p++) {
                                 boolean r = true;
 
                                 while (r) {
-                                    System.out.println("qual o valor da " + (i + 1) + " planta?");
+                                    System.out.println("qual o valor da " + (p + 1) + " planta?");
                                     Valor = scanner.nextFloat();
                                     if (Valor >= 0) {
 
@@ -53,14 +55,12 @@ public class trabalho2flores {
                                 Valortotal = Valor + Valortotal;
 
                             }
-                            if (Quantplant>=10) {
+                            if (Quantplant >= 10) {
 
                                 Valortotal *= 0.95;
 
                                 Desc = "Desconto";
 
-                                
-                                
                             }
 
                             System.out.println("insira o valor do pagamento");
@@ -70,22 +70,23 @@ public class trabalho2flores {
 
                             while (f2) {
 
-                                int i = 0;
+                                i = i + 1;
 
                                 vetor[i] = Valortotal;
 
                                 System.out.println("_______________________________________\n");
                                 System.out.println("|           SISTEMA DE VENDA          |\n");
                                 System.out.println("|             Gabrielinha             |\n");
-                                System.out.println("|"+Desc+"                                      |");
+                                System.out.println("|" + Desc + "                                      |");
                                 System.out.println("|Valor da compra: " + Valortotal + "                 |\n");
                                 System.out.println("|valor do pagamento: " + Pagamento + "              |\n");
-                                System.out.println("|troco: " + (Pagamento - Valortotal) + "                         |\n");
+                                System.out.println(
+                                        "|troco: " + (Pagamento - Valortotal) + "                         |\n");
                                 System.out.println("|escolha uma das seguinte opreações:  |\n");
                                 System.out.println("|(1)Fazer outra venda                 |\n");
                                 System.out.println("|(2)sair da venda                     |\n");
                                 System.out.println("|_____________________________________|\n");
-                                Desc="";
+                                Desc = "";
 
                                 int n = scanner.nextInt();
                                 switch (n) {
@@ -126,16 +127,16 @@ public class trabalho2flores {
 
                 case 2:
 
-                    boolean f5=true;
+                    boolean f5 = true;
 
-                    int i = 0;
+                    int y = 0;
                     while (f5) {
-                        if (vetor[i] == 0.0) {
+                        if (vetor[y] == 0.0) {
                             f5 = false;
                         } else {
-                            System.out.println("Histórico de compra " + (i + 1) + " = " + vetor[i]);
+                            System.out.println("Histórico de compra " + (y + 1) + " = " + vetor[y]);
                         }
-                        i++; 
+                        y++;
                     }
 
                     break;
@@ -148,5 +149,4 @@ public class trabalho2flores {
         }
 
     }
-
 }
