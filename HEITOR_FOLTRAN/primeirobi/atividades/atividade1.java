@@ -1,4 +1,4 @@
-package atividades;
+package primeirobi.atividades;
 import java.util.Scanner;
 
 public class atividade1 {
