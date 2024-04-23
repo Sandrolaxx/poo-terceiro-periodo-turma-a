@@ -57,6 +57,7 @@ public class GerenciadorDos {
             opcao = scanner.nextInt();
             
             if (opcao == 1) {
+                //criando uma instancia de Pedido
                 pedido = new Pedido();
                 System.out.println("Digite o id do produto: ");
                 pedido.id = scanner.nextInt();
