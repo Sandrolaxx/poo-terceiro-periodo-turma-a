@@ -1,4 +1,5 @@
-package primeirobimestre.ListaSeis;
+package primeirobimestre.Listasete;
+
     public class Gerente {
         String nome;
         int idade;
