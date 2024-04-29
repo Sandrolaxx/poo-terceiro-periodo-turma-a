@@ -30,17 +30,17 @@ public class Loja {
     }
 
     public void contarClientes() {
-        System.out.println("Quantidade de clientes: " + clientes.size());
+        System.out.println("QUANTIDADE DE CLIENTES: " + clientes.size());
     }
 
     public void contarVendedores() {
-        System.out.println("Quantidade de vendedores: " + vendedores.size());
+        System.out.println("QUANTIDADE DE VENDEDORES: " + vendedores.size());
     }
 
     public void apresentarse() {
-        System.out.println("Nome Fantasia: " + nomeFantasia);
+        System.out.println("NOME FANTASIA: " + nomeFantasia);
         System.out.println("CNPJ: " + cnpj);
-        System.out.println("Endereço: " + cidade + ", " + bairro + ", " + rua);
+        System.out.println("ENDERECO: " + cidade + ", " + bairro + ", " + rua);
     }
 
     public String getNome() {

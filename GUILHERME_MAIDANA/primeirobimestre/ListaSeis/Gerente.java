@@ -8,7 +8,7 @@ package primeirobimestre.ListaSeis;
         String rua;
         double salarioBase;
         double[] salarioRecebido;
-    
+        
         public Gerente(String nome, int idade, Loja loja, String cidade, String bairro, String rua, double salarioBase, double[] salarioRecebido) {
             this.nome = nome;
             this.idade = idade;

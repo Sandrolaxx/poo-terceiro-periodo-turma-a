@@ -1,8 +1,8 @@
 package primeirobi.atividades.lista6;
 
 public class Gerente extends Cidadao {
-    private int salarioBase;
-    private double[] salarioRecebido = new double[3];
+    protected int salarioBase;
+    protected double[] salarioRecebido = new double[3];
 
     public Gerente(String nome, String cidade, String bairro, String rua, String loja, int idade, int salarioBase, double[] salarioRecebido) {
         super(nome, cidade, bairro, rua, loja, idade);
@@ -11,7 +11,7 @@ public class Gerente extends Cidadao {
     }
 
     public void apresentarSe() {
-        System.out.println("Nome: " + this.nome + "\nIdade: " + this.idade + "\nLoja: " + this.loja);
+        System.out.println("Nome: " + this.getNome() + "\nIdade: " + this.getIdade() + "\nLoja: " + this.getLoja());
     }
 
     public void calcularMedia() {

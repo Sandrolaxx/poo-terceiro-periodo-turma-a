@@ -14,11 +14,10 @@ public class Item {
     }
 
     public void gerarDescricao() {
-        System.out.println("ID: " + id + ", Nome: " + nome + ", Tipo: " + tipo + ", Valor: " + valor);
+        System.out.println("ID: " + id + ", Nome: " + nome + ", Tipo: " + tipo + ", Valor: R$" + valor);
     }
 
     public double getValor() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'getValor'");
+        return valor;
     }
 }

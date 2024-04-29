@@ -5,6 +5,7 @@ public class Cliente {
     String cidade;
     String bairro;
     String rua;
+    
 
     public Cliente(String nome, int idade, String cidade, String bairro, String rua) {
         this.nome = nome;

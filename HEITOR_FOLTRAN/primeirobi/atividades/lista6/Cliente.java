@@ -7,7 +7,7 @@ public class Cliente extends Cidadao {
     }
 
     void apresentarSe(){
-        System.out.println("Cliente: " + this.nome+ "\nIdade: " + this.idade);
+        System.out.println("Cliente: " + this.getNome()+ "\nIdade: " + this.getIdade());
     }
 
 }

@@ -12,9 +12,9 @@ public class processaPedido {
         Pedido pedido = new Pedido(idPedido, dataCriacao, cliente, vendedor, loja, itens);
         boolean pagamentoConfirmado = confirmarPagamento(pedido);
         if (pagamentoConfirmado) {
-            System.out.println("Pedido processado com sucesso!");
+            System.out.println("PEDIDO PROCESSADO COM SUCESSO!");
         } else {
-            System.out.println("Não foi possível processar o pedido devido à reserva vencida.");
+            System.out.println("NAO FOI POSSIVEL PROCESSAR O PEDIDO DEVIDO A RESERVA VENCIDA.");
         }
     }
 
@@ -31,16 +31,16 @@ public class processaPedido {
 
     public void apresentarSe(int idPedido, Date dataCriacao, Cliente cliente, Vendedor vendedor, Loja loja, List<Item> itens) {
         Pedido pedido = new Pedido(idPedido, dataCriacao, cliente, vendedor, loja, itens);
-        System.out.println("Pedido ID: " + idPedido);
-        System.out.println("Data de Criação: " + dataCriacao);
-        System.out.println("Cliente: " + cliente.getNome());
-        System.out.println("Vendedor: " + vendedor.getNome());
-        System.out.println("Loja: " + loja.getNome());
-        System.out.println("Itens do Pedido:");
+        System.out.println("PEDIDO ID: " + idPedido);
+        System.out.println("DATA DE CRIACAO: " + dataCriacao);
+        System.out.println("CLIENTE: " + cliente.getNome());
+        System.out.println("VENDEDOR: " + vendedor.getNome());
+        System.out.println("LOJA: " + loja.getNome());
+        System.out.println("ITENS DO PEDIDO:");
         for (Item item : itens) {
             item.gerarDescricao();
         }
-        System.out.println("Valor Total do Pedido: " + pedido.calcularValorTotal());
+        System.out.println("VALOR TORAL DO PEDIDO: " + pedido.calcularValorTotal());
     }
 
     public static void main(String[] args) {
