@@ -1,5 +1,6 @@
 package primeirobi.atividades;
 
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -21,7 +22,13 @@ public class CalculadoraGab3 {
             System.out.println("[5] - Sair");
 
             System.out.print("Escolha uma opção: ");
-            option = input.nextInt();
+            try {
+                option = Integer.parseInt(input.nextLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Por favor, insira um número válido.");
+                option = 0; // Definir como 0 para repetir o loop
+                continue;
+            }
 
             switch (option) {
                 case 1:
@@ -48,34 +55,65 @@ public class CalculadoraGab3 {
     }
 
     public static void calculateTotalPrice(Scanner input) {
-        // Implementação anterior
+        System.out.print("Digite a quantidade da planta vendida: ");
+        int quantity = input.nextInt();
+
+        System.out.print("Digite o preço unitário da planta: ");
+        double unitPrice = input.nextDouble();
+
+        double totalPrice = quantity * unitPrice;
+
+        // Verifica se tm desconto especial
+        if (quantity > 10) {
+            double discount = 0.05 * totalPrice;
+            totalPrice -= discount;
+            System.out.println("Desconto Especial de 5% aplicado!");
+        }
+
+        System.out.println("O preço total é: " + totalPrice);
     }
 
     public static void calculateChange(Scanner input) {
-        // Implementação anterior
+        System.out.print("Digite o valor recebido pelo cliente: ");
+        double amountReceived = input.nextDouble();
+
+        System.out.print("Digite o valor total da compra: ");
+        double totalAmount = input.nextDouble();
+
+        double change = amountReceived - totalAmount;
+        System.out.println("O troco a ser dado ao cliente é: " + change);
     }
 
     public static void registrarVenda(Scanner input) {
-        // Implementação anterior
+        System.out.println("Digite o dia, mês e valor da venda (separados por espaço): ");
+        try {
+            String[] vendaInfo = input.nextLine().split(" ");
+            if (vendaInfo.length != 3) {
+                System.out.println("Por favor, insira todos os campos.");
+                return;
+            }
+            String keyDia = vendaInfo[0] + "-" + vendaInfo[1];
+            double valorVenda = Double.parseDouble(vendaInfo[2]);
 
-        // Atualização dos registros de vendas por dia e por mês
-        String keyDia = input.next() + "-" + input.next();
-        double valorVenda = input.nextDouble();
-
-        vendasPorDia.put(keyDia, vendasPorDia.getOrDefault(keyDia, 0.0) + valorVenda);
-
-        String keyMes = input.next();
-        vendasPorMes.put(keyMes, vendasPorMes.getOrDefault(keyMes, 0.0) + valorVenda);
+            vendasPorDia.put(keyDia, vendasPorDia.getOrDefault(keyDia, 0.0) + valorVenda);
+            vendasPorMes.put(vendaInfo[1], vendasPorMes.getOrDefault(vendaInfo[1], 0.0) + valorVenda);
+        } catch (NumberFormatException e) {
+            System.out.println("Valor da venda inválido. Por favor, insira um número válido.");
+        }
     }
 
     public static void buscarVendas(Scanner input) {
-        System.out.print("Digite o dia e mês (formato: dia-mês): ");
-        String keyDia = input.next();
+        System.out.println("Digite o dia e mês (formato: dia mês): ");
+        String[] buscaInfo = input.nextLine().split(" ");
+        if (buscaInfo.length != 2) {
+            System.out.println("Por favor, insira o dia e o mês.");
+            return;
+        }
+        String keyDia = buscaInfo[0] + "-" + buscaInfo[1];
         double valorVendasDia = vendasPorDia.getOrDefault(keyDia, 0.0);
         System.out.println("Vendas no dia " + keyDia + ": " + valorVendasDia);
 
-        System.out.print("Digite o mês: ");
-        String keyMes = input.next();
+        String keyMes = buscaInfo[1];
         double valorVendasMes = vendasPorMes.getOrDefault(keyMes, 0.0);
         System.out.println("Vendas no mês " + keyMes + ": " + valorVendasMes);
     }

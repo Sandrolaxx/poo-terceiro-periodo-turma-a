@@ -20,8 +20,7 @@ public class Main {
             System.out.println("7. Sair");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Limpa o buffer do scanner
-
+            scanner.nextLine(); 
             switch (choice) {
                 case 1:
                     criarNovoGerente(scanner);
@@ -57,7 +56,7 @@ public class Main {
         String nome = scanner.nextLine();
         System.out.println("Digite a idade do gerente:");
         int idade = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite a loja do gerente:");
         String loja = scanner.nextLine();
         System.out.println("Digite a cidade do gerente:");
@@ -68,7 +67,7 @@ public class Main {
         String rua = scanner.nextLine();
         System.out.println("Digite o salário base do gerente:");
         double salarioBase = scanner.nextDouble();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite os salários recebidos do gerente (separados por vírgula):");
         String[] salarioRecebidoStr = scanner.nextLine().split(",");
         double[] salarioRecebido = new double[salarioRecebidoStr.length];
@@ -89,7 +88,7 @@ public class Main {
         String bairro = scanner.nextLine();
         System.out.println("Digite o número:");
         int numero = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite o complemento:");
         String complemento = scanner.nextLine();
 
@@ -100,15 +99,14 @@ public class Main {
     private static void criarNovoItem(Scanner scanner) {
         System.out.println("Digite o ID do item:");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite o nome do item:");
         String nome = scanner.nextLine();
         System.out.println("Digite o tipo do item:");
         String tipo = scanner.nextLine();
         System.out.println("Digite o valor do item:");
         double valor = scanner.nextDouble();
-        scanner.nextLine(); // Limpa o buffer do scanner
-
+        scanner.nextLine(); 
         Item item = new Item(id, nome, tipo, valor);
         System.out.println("Item criado com sucesso: " + item);
     }
@@ -116,7 +114,7 @@ public class Main {
     private static void criarNovoCliente(Scanner scanner) {
         System.out.println("Digite o ID do cliente:");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite o nome do cliente:");
         String nome = scanner.nextLine();
         System.out.println("Digite o email do cliente:");
@@ -129,7 +127,7 @@ public class Main {
     private static void criarNovoVendedor(Scanner scanner) {
         System.out.println("Digite o ID do vendedor:");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite o nome do vendedor:");
         String nome = scanner.nextLine();
         System.out.println("Digite a loja do vendedor:");
@@ -142,12 +140,12 @@ public class Main {
     private static void criarNovoPedido(Scanner scanner, ProcessaPedido processador) {
         System.out.println("Digite o ID do pedido:");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite a data de criação do pedido (formato dd/MM/yyyy HH:mm:ss):");
         String dataCriacaoStr = scanner.nextLine();
         System.out.println("Digite o ID do cliente:");
         int idCliente = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine();
         System.out.println("Digite o nome do cliente:");
         String nomeCliente = scanner.nextLine();
         System.out.println("Digite o email do cliente:");
@@ -155,7 +153,7 @@ public class Main {
         Cliente cliente = new Cliente(idCliente, nomeCliente, emailCliente);
         System.out.println("Digite o ID do vendedor:");
         int idVendedor = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite o nome do vendedor:");
         String nomeVendedor = scanner.nextLine();
         System.out.println("Digite a loja do vendedor:");
@@ -165,27 +163,27 @@ public class Main {
         String loja = scanner.nextLine();
         System.out.println("Digite o número de itens no pedido:");
         int numItens = scanner.nextInt();
-        scanner.nextLine(); // Limpa o buffer do scanner
+        scanner.nextLine(); 
         Item[] itens = new Item[numItens];
         for (int i = 0; i < numItens; i++) {
             System.out.println("Digite os detalhes do item " + (i + 1) + ":");
             System.out.println("ID:");
             int idItem = scanner.nextInt();
-            scanner.nextLine(); // Limpa o buffer do scanner
+            scanner.nextLine(); 
             System.out.println("Nome:");
             String nomeItem = scanner.nextLine();
             System.out.println("Tipo:");
             String tipoItem = scanner.nextLine();
             System.out.println("Valor:");
             double valorItem = scanner.nextDouble();
-            scanner.nextLine(); // Limpa o buffer do scanner
+            scanner.nextLine(); 
             itens[i] = new Item(idItem, nomeItem, tipoItem, valorItem);
         }
 
         
     }
     private static void criarPedidoFicticio(ProcessaPedido processador) {
-        // Criando objetos fictícios para o pedido
+        
         Cliente cliente = new Cliente(1, "Maria", "maria@example.com");
         Vendedor vendedor = new Vendedor(1, "Pedro", "Loja B");
         Item item1 = new Item(1, "Camiseta", "Vestuário", 29.99);

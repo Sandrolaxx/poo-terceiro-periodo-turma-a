@@ -36,12 +36,12 @@ public class Gerente {
     }
 
     public void apresentarSe() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
+        System.out.println("NOME: " + nome);
+        System.out.println("IDADE: " + idade);
         if (loja != null) {
-            System.out.println("Loja: " + loja.getNome());
+            System.out.println("LOJA: " + loja.getNome());
         } else {
-            System.out.println("Loja: Não especificada");
+            System.out.println("LOJA: NAO ESPECIFICADA");
         }
     }
 

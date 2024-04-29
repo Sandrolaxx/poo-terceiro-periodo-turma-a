@@ -5,7 +5,11 @@ import javax.xml.crypto.Data;
 
 public class ProcessaPedido{
     
-    Pedido order;
+    private Pedido order;
+
+    public void setPedido(Pedido order){
+        this.order = order;
+    }
 
     private boolean confirmarPagamento(){
         order.vencimento = (order.dataVencimento.getTime()/order.day) - (order.dataCriacao.getTime()/order.day);

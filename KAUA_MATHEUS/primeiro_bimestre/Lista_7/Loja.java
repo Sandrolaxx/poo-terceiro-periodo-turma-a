@@ -19,13 +19,20 @@ public class Loja{
 
     public Loja(
         String fantasy_name, String social_reason, String cnpj, 
-        Endereco endereco//, Vendedor[] sellers
+        Endereco endereco
     ){
         this.fantasy_name = fantasy_name;
         this.social_reason = social_reason;
         this.cnpj = cnpj;
         this.endereco = endereco;
-        //this.sellers = sellers;
+    }
+
+    void setSellers(Vendedor[] sellers){
+        this.sellers = sellers;
+    }
+
+    void setClients(Cliente[] clients){
+        this.clients = clients;
     }
 
     void apresentarSe(){

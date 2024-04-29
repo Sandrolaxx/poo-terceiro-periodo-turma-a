@@ -55,13 +55,20 @@ public class Main {
         System.out.println("\n--------------------------------\n");
 
 
-        Date dataAtual = new Date();
-
         Item[] itensPedido = {new Item(520, "Pé de Jaca", "Planta", 800), new Item(310, "Pé de Manga", "Planta", 300), new Item(240, "Pé de Couve", "Planta", 20)};
 
+        Cliente cliente = new Cliente("João", "Tupãssi", "Jardim São Paulo", "Primeiro de Janeiro", 19);
+
+        Vendedor vendedor = new Vendedor("Alberto", "Myy Plant", "Cascavel", "Centro", "São Paulo", 3000, 40, new double[]{4000, 4500, 3000});
+
+        Loja loja = new Loja("Myy Plant", "Myy Plant INC", "Cascavel", "Parque São Paulo", "Curitiba", new String[]{"João", "Alberto", "Rafael"}, new String[]{"Flávio", "Roberto", "Pedro"}, 47553909000130L);
+
+        Pedido primeiroPedido = new Pedido(520, new Date(), new Date(), cliente, vendedor, loja, itensPedido);
+
         ProcessaPedido processador = new ProcessaPedido();
-            processador.processar(310, dataAtual, primeiroCliente, primeiroVendedor, primeiraLoja, itensPedido);
+        processador.processar(primeiroPedido);
 
+        System.out.println(primeiroPedido.gerarDescricaoVenda());
 
-    }
+   }
 }

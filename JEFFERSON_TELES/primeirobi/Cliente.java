@@ -15,17 +15,16 @@ public class Cliente {
         this.rua = rua;
     }
 
-    public Cliente(String string) {
-    
+    public Cliente(String nome) {
+        this.nome = nome;
     }
 
     public void apresentarse() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
+        System.out.println("NOME: " + nome);
+        System.out.println("IDADE: " + idade);
     }
 
     public String getNome() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'getNome'");
+        return nome;
     }
 }

@@ -14,18 +14,20 @@ public class ProcessaPedido {
     public void processar(){
         if(confirmarPagamento()){
             System.out.println("Pagamento confirmado");
+            pedido.setDataPagamento(dataAtual); 
         }
         else{
             System.out.println("Pagamento pendente");
         }
     }
     private boolean confirmarPagamento(){
-        if (pedido.DataVencimento() == null) {
+        Date dataVencimento = pedido.getDataVencimento();
+        if (dataVencimento == null) {
            
             return false;
 
         }
-        return dataAtual.after(pedido.DataVencimento());
+        return dataAtual.after(dataVencimento);
     }
 
 }
