@@ -1,3 +1,4 @@
+package GerenciadorVeia;
 public class Gerente 
 {
     private String nomeG;

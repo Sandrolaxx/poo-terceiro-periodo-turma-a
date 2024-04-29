@@ -1,3 +1,4 @@
+package GerenciadorVeia;
 public class Vendedor 
 {
     private String nomeV;

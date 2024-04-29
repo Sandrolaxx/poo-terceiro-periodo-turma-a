@@ -1,3 +1,5 @@
+package GerenciadorVeia;
+
 public class Loja 
 {   
 
