@@ -1,4 +1,4 @@
-package PEDRO_HENRIQUE_GULIGURSKI.primeirobimestre.prova;
+package primeirobimestre.prova;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -93,6 +93,7 @@ public class Main {
 
                     } else if (respo2 == 2) {
                         System.out.println("Insira o nome do autor do livro:");
+                        @SuppressWarnings("unused")
                         String autorBuscar = input.nextLine();
                         
                     } else if (respo2 == 3) {
