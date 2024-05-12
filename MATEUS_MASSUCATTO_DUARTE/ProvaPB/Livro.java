@@ -25,7 +25,7 @@ public class Livro
 
     public void setTituloL()
     {
-        this.tituloLivro = tituloLivro;
+        //this.tituloLivro = tituloLivro;
     }
 
     public String getAutorL()
@@ -35,7 +35,7 @@ public class Livro
 
     public void setAutorL()
     {
-        this.autorLivro = autorLivro;
+       // this.autorLivro = autorLivro;
     }
 
     public int getDataL()
@@ -45,7 +45,7 @@ public class Livro
 
     public void setDataL()
     {
-        this.dataLivro = dataLivro;
+        //this.dataLivro = dataLivro;
     }
     
 }

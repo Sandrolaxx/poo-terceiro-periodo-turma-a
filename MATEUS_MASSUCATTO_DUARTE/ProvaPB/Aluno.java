@@ -25,7 +25,7 @@ public class Aluno
 
     public void setNomeA()
     {
-        this.nomeAluno = nomeAluno;
+        //this.nomeAluno = nomeAluno;
     }
 
     public String getTurmaA()
@@ -35,7 +35,7 @@ public class Aluno
 
     public void setTurmaA()
     {
-        this.turmaAluno = turmaAluno;
+        //this.turmaAluno = turmaAluno;
     }
 
     public int getIdadeA()
@@ -45,6 +45,6 @@ public class Aluno
 
     public void setIdadeA()
     {
-        this.idadeAluno = idadeAluno;
+       // this.idadeAluno = idadeAluno;
     }
 }

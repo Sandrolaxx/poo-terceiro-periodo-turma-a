@@ -4,10 +4,15 @@ public class Gerente
     private String nomeG;
     private int idadeG;
     private String loja;
+    @SuppressWarnings("unused")
     private String cidadeG;
+    @SuppressWarnings("unused")
     private String bairroG;
+    @SuppressWarnings("unused")
     private String ruaG;
+    @SuppressWarnings("unused")
     private int numeroG;
+    @SuppressWarnings("unused")
     private String complementoG;
     private double SalarioBase;
     private double SalarioRecebido;
