@@ -1,53 +1,52 @@
-package KAUA_MATHEUS.primeiro_bimestre.Lista_6;
+package KAUA_MATHEUS.primeiro_bimestre.Lista_7;
 
 import java.util.ArrayList;
 
-public class Vendedor extends Pessoa{
+public class Vendedor implements Pessoa{
 
-    // Criação de Atributos
-    String name;
-    int age;
-    Loja Store;
-    float base_wage, average, bonus;
-    float[] wage_received;
-    Endereco endereco;
+    private String name;
+    private int age;
+    private float base_wage;
+    private float[] wage_received;
 
-    // Criação do acesso de Vendedor
-    public Vendedor(
-        String name, int age, Loja Store, Endereco endereco,
-        float[] wage_received, float base_wage
-    ) 
-    {
-        // Criação de Propriedades
-        this.name = name; 
-        this.age = age; 
-        this.Store = Store;
-        this.endereco = endereco;
-        this.wage_received = wage_received; 
+    private Endereco address;
+    private Loja store;
+
+    public void setPessoa(String name, int age, Endereco address,
+    float base_wage, float[] wage_received, Loja store){
+        this.name = name;
+        this.age = age;
+        this.address = address;
         this.base_wage = base_wage;
-        this.bonus = 0;
-        this.average = 0;
+        this.wage_received = wage_received;
+        this.store = store;
     }
 
-    // Criação do método "apresentarSe"
-    void apresentarSe() {
-        System.out.printf("Olá eu me chamo \u001B[32m%s!\u001B[m e tenho \u001B[32m%d\u001B[m anos!\n", this.name, this.age);
-        //System.out.printf("Trabalho na loja \u001B[32m%s\u001B[m\n", this.Store.fantasy_name);
-
-        return;
+    public void apresentarSe(){
+        System.out.printf("Olá, meu nome é %s!\n", this.name);
+        System.out.printf("Idade: %d\n", this.age);
+        System.out.printf("Loja: %s\n", store.fantasy_name);
     }
 
-    float calcularMedia(){   
-        for (int i = 0; i < this.wage_received.length; i++) {
-            this.average += this.wage_received[i];   
+    public void enderecoApresenta(){
+        System.out.printf("Rua %s, %s - %s\n", address.street, 
+        address.neighborhood, address.city);
+    }
+
+    @Override
+    public float calcular_bonus() {
+        return base_wage * 0.2f;
+    }
+
+    @Override
+    public float calcular_media() {
+        float median = 0;
+
+        for (int i = 0; i < wage_received.length; i++) {
+            median = median + wage_received[i];
         }
-        this.average /= this.wage_received.length;
-        return this.average;
+        return median / wage_received.length;
     }
 
-    float calcularBonus(){   
-        this.bonus = this.base_wage * 0.2f;
-        return this.bonus;
-    }
 
 }

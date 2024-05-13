@@ -3,25 +3,25 @@ package atividades1B;
 import java.util.Date;
 
 public class Pedido {
-     int Id;
-     Date dataCriacao;
+    private int id;
+    private Date dataCriacao;
      Date dataPagamento;
-     Date Datadevencimento;
+     Date dataDeVencimento;
      Cliente cliente;
      Vendedor vendedor;
      Loja loja;
-     Item[] itens;
-     Date dataVencimentoReserva;
+    private Item[] itens;
+    private Date dataVencimentoReserva;
 
     public Pedido(int id, Date dataCriacao, Cliente cliente, Vendedor vendedor, Loja loja, Item[] itens) {
-        this.Id = id;
+        this.id = id;
         this.dataCriacao = dataCriacao;
         this.cliente = cliente;
         this.vendedor = vendedor;
         this.loja = loja;
         this.itens = itens;
 
-        long tresDias = 3 * 24 * 60 * 60 * 1000; 
+        long tresDias = 3 * 24 * 60 * 60 * 1000; // 3 dias em milissegundos
         this.dataVencimentoReserva = new Date(dataCriacao.getTime() + tresDias);
     }
 
@@ -39,12 +39,10 @@ public class Pedido {
     }
 
     public Date getDataVencimentoReserva() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'getDataVencimentoReserva'");
+        return dataVencimentoReserva;
     }
 
-    public String getId() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    public int getId() {
+        return id;
     }
 }

@@ -4,13 +4,17 @@ public class Item {
     private String id;
     private String nome;
     private String tipo;
-    private float valor;
+    float valor;
 
     
     public Item(String id, String nome, String tipo, float valor) {
         this.id = id;
         this.nome = nome;
         this.tipo = tipo;
+        this.valor = valor;
+    }
+    
+    public void setValor(float valor) {
         this.valor = valor;
     }
 
@@ -28,4 +32,13 @@ public class Item {
     public float getValor() {
         return valor;
     }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
 }
