@@ -1,10 +1,13 @@
 package segundobi.listas.lista1;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.HashSet;
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+
         //ATV1
 
         List<String> colegas = new ArrayList<String>();
@@ -52,12 +55,60 @@ public class Main {
             jogos.add("Stardew Valley");
             jogos.add("The Witcher");
 
-            HashSet<String> semDuplicatas = new HashSet<String>(jogos);
-            System.out.println(semDuplicatas);
+            System.out.println(removerDuplicatas(jogos));
 
         //ATV 4
+
+        PriorityQueue<String> top5 = new PriorityQueue<>();
+        top5.add("Mushoku Tensei");
+        top5.add("Vinland Saga");
+        top5.add("Tensei shitara");
+        top5.add("Full Metal Alquimist");
+        top5.add("Shrek");
+        System.out.println(ordemAlfabetica(top5));
+
+        
+        //ATV 5
+
+        List<String> listaPecas =  new ArrayList<String>();
+        boolean teste = true;
+        int simNao = 1;
+        while(teste=true){
+            System.out.println("Deseja adicionar peça a lista?\n 1 - SIM | 2 -NÃO");
+            simNao=scanner.nextInt();
+            if(simNao!=1){
+                break;
+            }else{
+                listaPecas.add(dadosPeças());
+            }
+        }
+        System.out.println("Lista de peças");
+        System.out.println(listaPecas);
+
+
     }
 
+    public static HashSet<String> removerDuplicatas(List lista){
+        HashSet<String> semDuplicatas = new HashSet<String>(lista);
+        return semDuplicatas;
+    }
+
+    public static List<String> ordemAlfabetica(PriorityQueue<String> fila){
+        List<String> ordenada = new ArrayList();
+        int x = fila.size();
+        for(int i = 0;i<x;i++){
+            ordenada.add(fila.poll());
+        }
+        return ordenada;
+    }
+
+    public static String dadosPeças(){
+        Scanner  scanner = new Scanner(System.in);
+        String peca ="";
+        System.out.println("Insira nome da peça");
+        peca=scanner.next();
+        return peca;
+    }
 }
 
 
