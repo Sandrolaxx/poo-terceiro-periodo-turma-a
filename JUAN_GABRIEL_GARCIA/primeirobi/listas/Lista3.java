@@ -1,4 +1,4 @@
-package primeirobi.listas;
+package primeirobi.listas; // cd .. para usar os comandos do git
 
 import java.util.Scanner;
 

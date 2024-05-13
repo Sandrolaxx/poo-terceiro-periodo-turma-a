@@ -24,6 +24,10 @@ public class Vendedor {
         this.salarioRecebido = new ArrayList<>(Arrays.asList(1500.0, 1600.0, 1550.0));
     }
 
+    public Vendedor(String string) {
+
+    }
+
     public void apresentarse() {
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
@@ -45,5 +49,10 @@ public class Vendedor {
 
     public void adicionarSalarioRecebido(double salario) {
         salarioRecebido.add(salario);
+    }
+
+    public String getNome() {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'getNome'");
     }
 }

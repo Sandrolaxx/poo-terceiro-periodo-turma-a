@@ -25,7 +25,7 @@ public class Cliente {
 
     }
 
-    void apresentarSe(){
+    public void apresentarSe(){
         System.out.printf("Meu nome é %s%s%s e tenho %s%d%s anos!\n",green, this.name, standart, green, this.age, standart);
         System.out.printf("Endereço: Rua %s%s, %s - %s%s\n", green, this.street, this.neighborhood, this.city, standart);
     }

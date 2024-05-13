@@ -1,4 +1,4 @@
-package exemplos;
+package primeirobi.exemplos;
 import java.util.Scanner;
 
 public class Hello {

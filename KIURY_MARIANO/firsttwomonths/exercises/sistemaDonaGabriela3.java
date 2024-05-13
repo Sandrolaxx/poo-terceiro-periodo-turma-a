@@ -212,6 +212,7 @@ public class sistemaDonaGabriela3 {
                     System.out.println("\n " + calendar[day][month]);
                     
                     System.out.println("\n O valor neste dia é de: R$" + calendar[day][month]);
+                    
                     continue;    
 
 

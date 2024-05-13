@@ -3,11 +3,11 @@ package primeirobi;
 public class Numero {
     private double x;
 
-    private double getX() {
+    public double getX() {
         return x;
     }
 
-    private void setX(double x) {
+    public void setX(double x) {
         this.x = x;
     }
 

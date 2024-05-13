@@ -50,6 +50,7 @@ public class calculadora3 {
     }
     
     public static void marcarVendaCalendario(float[][] matrizVenda, float valorTotal) {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Em qual dia deseja salvar a compra?");
         int dia = input.nextInt();
@@ -72,6 +73,7 @@ public class calculadora3 {
 
     public static void solicitaProduto(float[][] matriz, int linhaAtual, float[][] matrizVenda) {
 
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Digite o valor unitário do produto: ");
         float valorProduto = input.nextFloat();

@@ -26,17 +26,17 @@ public class Loja {
         this.street = street;
     }
 
-    void apresentarSe(){
+    public void apresentarSe(){
         System.out.printf("Nome: %s%s%s\n", green, this.fantasy_name, standart);
         System.out.printf("CNPJ: %s%s%s\n", green, this.cnpj, standart);
         System.out.printf("Endereço: Rua %s%s, %s - %s%s\n", green, this.street, this.neighborhood, this.city, standart);
     }
 
-    int contarClientes(){
+    public int contarClientes(){
         return this.clients.length;
     }
 
-    int contarVendedores(){
+    public int contarVendedores(){
         return this.sellers.length;
     }
 

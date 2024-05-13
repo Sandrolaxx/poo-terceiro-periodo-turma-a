@@ -30,14 +30,14 @@ public class Vendedor {
     }
 
     // Criação do método "apresentarSe"
-    void apresentarSe() {
+    public void apresentarSe() {
         System.out.printf("Olá eu me chamo \u001B[32m%s!\u001B[m e tenho \u001B[32m%d\u001B[m anos!\n", this.name, this.age);
         System.out.printf("Trabalho na loja \u001B[32m%s\u001B[m\n", this.Store.fantasy_name);
 
         return;
     }
 
-    float calcularMedia(){   
+    public float calcularMedia(){   
         for (int i = 0; i < this.wage_received.length; i++) {
             this.average += this.wage_received[i];   
         }
@@ -45,7 +45,7 @@ public class Vendedor {
         return this.average;
     }
 
-    float calcularBonus(){   
+    public float calcularBonus(){   
         this.bonus = this.base_wage * 0.2f;
         return this.bonus;
     }

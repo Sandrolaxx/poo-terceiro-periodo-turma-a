@@ -1,4 +1,4 @@
-package ITALLO_INGRATI_MARCORIN.primeirobi.exercicio2;
+package primeirobi.exercicio2;
 import java.util.Scanner;
 public class Floricultura2 {
     public static void main(String[] args) {
