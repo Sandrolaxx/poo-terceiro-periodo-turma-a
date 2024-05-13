@@ -1,4 +1,4 @@
-package primeirobimestre;
+package primeirobimestre.Exemplos;
 
 public class exemplomatriz {
 

@@ -180,7 +180,7 @@ public class CalculadoraEspecializada {
 
             System.out.println("\nR$ " + calendarioVenda[mesDaVenda][diaDaVenda] + "\n"); // Saída do valor total da data específica
             System.out.println(calendarioVenda[mesDaVenda][diaDaVenda] + " unidades\n"); // Saída da unidade total da data específica
-            System.out.println("R$ " + calendarioDesconto[mesDaVenda][diaDaVenda] + "%.2f"); // Saída do desconto total da data específica
+            System.out.println("R$ " + calendarioDesconto[mesDaVenda][diaDaVenda]); // Saída do desconto total da data específica
 
             break; // Não passar para os próximos cases
 

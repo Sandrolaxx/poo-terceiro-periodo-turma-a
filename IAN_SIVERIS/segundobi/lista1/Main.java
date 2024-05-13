@@ -8,8 +8,11 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 public class Main {
+
+    //ATV1
+
     public static void main(String[] args) {
-        // ATV1
+
         ArrayList<String> colegas = new ArrayList<>();
         colegas.add("Joao");
         colegas.add("Jorge");
@@ -21,7 +24,8 @@ public class Main {
             System.out.println(nome.charAt(0) + " - " + nome);
         }
 
-        // ATV2
+        //ATV2
+
         HashSet<Integer> numeros = new HashSet<>();
         numeros.add(1);
         numeros.add(2);
@@ -35,7 +39,9 @@ public class Main {
             System.out.println("O conjunto não contém o número " + numeroProcurado);
         }
 
-        // ATV3
+
+        //ATV3
+
         ArrayList<String> jogos = new ArrayList<>();
         jogos.add("GTA5");
         jogos.add("GTA5");
@@ -45,7 +51,9 @@ public class Main {
         List<String> jogosUnicos = removerDuplicatas(jogos);
         System.out.println("Jogos únicos: " + jogosUnicos);
 
-        // ATV4
+
+        //ATV4
+
         PriorityQueue<String> filmes = new PriorityQueue<>();
         filmes.add("Ratatouille");
         filmes.add("Vingadores Ultimato");
@@ -57,7 +65,9 @@ public class Main {
             System.out.println(filmes.poll());
         }
 
-        // ATV5
+
+        //ATV5
+
         HashMap<String, String> hardware = new HashMap<>();
         hardware.put("Processador", "i5 12400 - R$1500");
         hardware.put("Placa de vídeo", "RTX 3050 - R$1200");
