@@ -1,4 +1,4 @@
-package lista1;
+package SEGUNDO_BIMESTRE.ListaAtividades.lista1;
 
 import java.util.*;
 
