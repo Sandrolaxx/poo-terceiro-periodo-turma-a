@@ -87,12 +87,13 @@ public class Main {
 
 
     }
-
+    //Remove a duplicatadas adicionando retunando um HashSet que nao permite elementos duplicados.
     public static HashSet<String> removerDuplicatas(List lista){
         HashSet<String> semDuplicatas = new HashSet<String>(lista);
         return semDuplicatas;
     }
 
+    //Utiliza o poll para retirar os items em ordem alfabetica e adicionalos a uma lista e retornando uma lista já ordenada.
     public static List<String> ordemAlfabetica(PriorityQueue<String> fila){
         List<String> ordenada = new ArrayList();
         int x = fila.size();
@@ -102,6 +103,7 @@ public class Main {
         return ordenada;
     }
 
+    //Recolhe os dados das peças que o usuario deseja adicionar a lista.
     public static String dadosPeças(){
         Scanner  scanner = new Scanner(System.in);
         String peca ="";
