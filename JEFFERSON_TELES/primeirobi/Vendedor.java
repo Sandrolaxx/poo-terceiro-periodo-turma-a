@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Vendedor {
-    String nome;
-    int idade;
-    String loja;
+    private String nome;
+    private int idade;
+    private String loja;
     String cidade;
     String bairro;
     String rua;
-    double salarioBase;
-    ArrayList<Double> salarioRecebido;
+    private double salarioBase;
+    private ArrayList<Double> salarioRecebido;
 
     public Vendedor(String nome, int idade, String loja, String cidade, String bairro, String rua, double salarioBase) {
         this.nome = nome;
@@ -29,9 +29,9 @@ public class Vendedor {
     }
 
     public void apresentarse() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Loja: " + loja);
+        System.out.println("NOME: " + nome);
+        System.out.println("IDADE: " + idade);
+        System.out.println("LOJA: " + loja);
     }
 
     public double calcularMedia() {
@@ -46,13 +46,11 @@ public class Vendedor {
         return salarioBase * 0.2;
     }
 
-
     public void adicionarSalarioRecebido(double salario) {
         salarioRecebido.add(salario);
     }
 
     public String getNome() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'getNome'");
+        return nome;
     }
 }

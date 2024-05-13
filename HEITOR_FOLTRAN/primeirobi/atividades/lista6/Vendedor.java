@@ -1,9 +1,9 @@
 package primeirobi.atividades.lista6;
 
 public class Vendedor extends Cidadao {
-    private String loja;
-    private int salarioBase;
-    private double[] salarioRecebido;
+    protected String loja;
+    protected int salarioBase;
+    protected double[] salarioRecebido;
 
     public Vendedor(String nome, String loja, String cidade, String bairro, String rua, int salarioBase, int idade, double[] salarioRecebido) {
         super(nome, cidade, bairro, rua, rua, idade);
@@ -13,7 +13,7 @@ public class Vendedor extends Cidadao {
     }
 
     public void apresentarSe() {
-        System.out.println("Nome do vendedor: " + this.nome + "\nIdade: " + this.idade + "\nLoja: " + this.loja);
+        System.out.println("Nome do vendedor: " + this.getNome() + "\nIdade: " + this.getIdade() + "\nLoja: " + this.loja);
     }
 
     public void calcularMedia() {

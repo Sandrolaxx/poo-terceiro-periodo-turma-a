@@ -16,7 +16,7 @@ public class Endereco {
     }
 
     public void apresentarSe() {
-        System.out.println("Endereço: " + numero + ", " + complemento + ", " + bairro + ", " + cidade + " - " + estado);
+        System.out.println("ENDERECO: " + numero + ", " + complemento + ", " + bairro + ", " + cidade + " - " + estado);
     }
 
     public String getCidade() {

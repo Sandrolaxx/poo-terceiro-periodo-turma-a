@@ -1,16 +1,28 @@
-package KAUA_MATHEUS.primeiro_bimestre.Lista_6;
+package KAUA_MATHEUS.primeiro_bimestre.Lista_7;
 
 public class Item {
 
-    String id, name, type;
-    float value;
+    private String name, type;
+    private float value;
+    private int id;
 
-    public void setItem(String id, String name, String type, float value){
+    public Item(Integer id, String name, String type, float value){
         this.id = id;
         this.name = name;
         this.type = type;
         this.value = value;
     }
+
+    float getValue(){
+        return value;
+    }
+
+    public void setItem(String name, String type, float value){
+        this.name = name;
+        this.type = type;
+        this.value = value;
+    }
+    
 
     public void gerarDescricao(){
         System.out.printf("Id: %s\nItem: %s\n", this.id, this.name);

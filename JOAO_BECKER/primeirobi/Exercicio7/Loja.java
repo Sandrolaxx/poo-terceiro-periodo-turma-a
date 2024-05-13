@@ -11,6 +11,16 @@ public class Loja {
     private ArrayList<String> clientes = new ArrayList<String>();
     private Endereco endereco;
 
+    public Loja(String nomeFantasia, String razaoSocial, String cnpj, ArrayList<String> vendedores,
+            ArrayList<String> clientes, Endereco endereco) {
+        this.nomeFantasia = nomeFantasia;
+        this.razaoSocial = razaoSocial;
+        this.cnpj = cnpj;
+        this.vendedores = vendedores;
+        this.clientes = clientes;
+        this.endereco = endereco;
+    }
+
     public String getNomeFantasia() {
         return nomeFantasia;
     }
