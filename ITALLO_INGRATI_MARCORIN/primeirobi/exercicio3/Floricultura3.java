@@ -1,4 +1,4 @@
-package ITALLO_INGRATI_MARCORIN.primeirobi.exercicio3;
+package primeirobi.exercicio3;
 import java.util.Scanner;
 public class Floricultura3 {
     static double[][] vendas = new double[12][30];
