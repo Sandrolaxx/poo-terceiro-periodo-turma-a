@@ -70,21 +70,8 @@ public class Main {
         
         //ATV 5
 
-        List<String> listaPecas =  new ArrayList<String>();
-        boolean teste = true;
-        int simNao = 1;
-        while(teste=true){
-            System.out.println("Deseja adicionar peça a lista?\n 1 - SIM | 2 -NÃO");
-            simNao=scanner.nextInt();
-            if(simNao!=1){
-                break;
-            }else{
-                listaPecas.add(dadosPeças());
-            }
-        }
-        System.out.println("Lista de peças");
-        System.out.println(listaPecas);
-
+        List<String> configuracaoPC = new ArrayList<>(gerarListaPecas());
+        System.out.println(configuracaoPC);
 
     }
     //Remove a duplicatadas adicionando retunando um HashSet que nao permite elementos duplicados.
@@ -110,6 +97,24 @@ public class Main {
         System.out.println("Insira nome da peça");
         peca=scanner.next();
         return peca;
+    }
+
+    //Utiliza os dados recolhidos do metodo dadosPecas(), e junta todos dentro de uma lista para formar uma configuração de um computador.
+    public static List<String> gerarListaPecas(){
+        Scanner  scanner = new Scanner(System.in);
+        List<String> listaPecas =  new ArrayList<String>();
+        boolean teste = true;
+        int simNao = 1;
+        while(teste=true){
+            System.out.println("Deseja adicionar peça a lista?\n 1 - SIM | 2 -NÃO");
+            simNao=scanner.nextInt();
+            if(simNao!=1){
+                break;
+            }else{
+                listaPecas.add(dadosPeças());
+            }
+        }
+        return listaPecas;
     }
 }
 
