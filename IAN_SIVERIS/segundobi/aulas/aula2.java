@@ -1,7 +1,7 @@
 package segundobi.aulas;
 
 import java.util.Set;
-
+import java.util.HashSet;
 public class aula2 {
     public static void main(String[] args) {
         Set<String> names = new HashSet<>();

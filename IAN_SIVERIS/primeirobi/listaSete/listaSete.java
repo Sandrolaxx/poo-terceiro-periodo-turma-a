@@ -1,8 +1,7 @@
+package primeirobi.listaSete;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-package primeirobi.lista7;
 
 public class listaSete  {
 

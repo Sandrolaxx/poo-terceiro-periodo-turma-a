@@ -1,9 +1,7 @@
-
-    import java.util.ArrayList;
+package primeirobi;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-package primeirobi;
 
 public class exercicio7  {
 
