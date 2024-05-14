@@ -1,4 +1,4 @@
-package GABRIEL_SCHIESTL.PRIMEIRO_BIMESTRE.prova;
+package PRIMEIRO_BIMESTRE.prova;
 
 public class Aluno {
 
