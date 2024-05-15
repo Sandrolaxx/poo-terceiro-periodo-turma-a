@@ -31,7 +31,7 @@ public class calculadora2 {
         matriz[linhaAtual][2] = item3;
         matriz[linhaAtual][3] = item4;
     }
-    
+
     public static void exibirLista(float[][] matriz) {
         limparTerminal(); 
         for (int l = 0; l < matriz.length; l++) {
@@ -41,7 +41,7 @@ public class calculadora2 {
             System.out.println("--------------------------------");
             System.out.println("Produto " + l);
             for (int c = 0; c < matriz[l].length; c++) {
-                
+
                 if (c == 0) { // QtdProduto
                     System.out.println("Quantidade de Produtos: " + (int)matriz[l][c]);
                 } else if (c == 1) { // Valor Total
@@ -52,7 +52,7 @@ public class calculadora2 {
             }
         }
     }
-    
+
     public static void solicitaProduto(float[][] matriz, int linhaAtual) {
 
         Scanner input = new Scanner(System.in);
@@ -70,73 +70,72 @@ public class calculadora2 {
         } else {
             System.out.println("O valor total foi de R$" + valorTotal);
         }
-        
+
 
         System.out.println("Qual foi o valor pago?");
         float valorPago = input.nextInt();
 
         adicionarNaLista(matriz, linhaAtual, qtdProduto, (float)valorTotal, (float)desconto, (float)valorPago);
+        input.close();
     }
 
     public static void main(String[] args) throws InterruptedException, IOException {
         Scanner input = new Scanner(System.in);
         float[][] listaCompras = new float[50][5];
-        boolean continua = true;
         int linhaAtual = 0;
         solicitaProduto(listaCompras, linhaAtual);
         do {
-            while (true) {
-                System.out.println("--------------------------------");
-                System.out.println("Menu: \n[1] - Calcular preço total\n[2] - Calcular troco\n[3] - Adicionar a sacola\n[4] - Verificar sacola\n[5] - Sair" );
-                System.out.println("--------------------------------");
-                switch (input.nextInt()) {
-                    case 1:  
-                        float soma = 0;
-                        limparTerminal();               
-                        for (int l = 0; l < (linhaAtual + 1); l++){
-                            float valor = listaCompras[l][1];
-                            soma = soma + valor;
-                        }
-                        System.out.println("O valor total a ser pago é: R$" + soma);
-                        break;
-                    case 2:
-                        limparTerminal();
-                        soma = 0;
-                        float pago = 0;
-                        for (int l = 0; l < (linhaAtual + 1); l++){
-                            float valor = listaCompras[l][1];
-                            soma = soma + valor;
-                        }
-                        for (int l = 0; l < (linhaAtual + 1); l++){
-                            float valor = listaCompras[l][3];
-                            pago = pago + valor;
-                        }
-                        limparTerminal();
-                        if (soma == pago) {
-                            System.out.println("Não há troco.");
-                        } else if (pago < soma){
-                            System.out.println("Está faltando " + (soma - pago) + " reais.");
-                        } else {
-                            System.out.println("O troco é " +  (pago - soma) + " reais.");
-                        }
-                        break;
-                    case 3:
-                        limparTerminal();
-                        linhaAtual = linhaAtual + 1;
-                        solicitaProduto(listaCompras, linhaAtual);
-                        break;
-                    case 4:
-                        limparTerminal();
-                        exibirLista(listaCompras);
-                        break;
-                    case 5:
-                        System. exit(0);
-                        break;
-                    default:
-                        System.out.println("Opção inválida!");
-                        break;
-                }
+            System.out.println("--------------------------------");
+            System.out.println("Menu: \n[1] - Calcular preço total\n[2] - Calcular troco\n[3] - Adicionar a sacola\n[4] - Verificar sacola\n[5] - Sair" );
+            System.out.println("--------------------------------");
+            switch (input.nextInt()) {
+                case 1:  
+                    float soma = 0;
+                    limparTerminal();               
+                    for (int l = 0; l < (linhaAtual + 1); l++){
+                        float valor = listaCompras[l][1];
+                        soma = soma + valor;
+                    }
+                    System.out.println("O valor total a ser pago é: R$" + soma);
+                    break;
+                case 2:
+                    limparTerminal();
+                    soma = 0;
+                    float pago = 0;
+                    for (int l = 0; l < (linhaAtual + 1); l++){
+                        float valor = listaCompras[l][1];
+                        soma = soma + valor;
+                    }
+                    for (int l = 0; l < (linhaAtual + 1); l++){
+                        float valor = listaCompras[l][3];
+                        pago = pago + valor;
+                    }
+                    limparTerminal();
+                    if (soma == pago) {
+                        System.out.println("Não há troco.");
+                    } else if (pago < soma){
+                        System.out.println("Está faltando " + (soma - pago) + " reais.");
+                    } else {
+                        System.out.println("O troco é " +  (pago - soma) + " reais.");
+                    }
+                    break;
+                case 3:
+                    limparTerminal();
+                    linhaAtual = linhaAtual + 1;
+                    solicitaProduto(listaCompras, linhaAtual);
+                    break;
+                case 4:
+                    limparTerminal();
+                    exibirLista(listaCompras);
+                    break;
+                case 5:
+                    System. exit(0);
+                    break;
+                default:
+                    System.out.println("Opção inválida!");
+                    break;
             }
-        } while (continua);
+            input.close();
+        } while (true);
     }
 }

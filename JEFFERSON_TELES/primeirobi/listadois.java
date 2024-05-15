@@ -110,10 +110,10 @@ public class listadois {
         }
     }
 
-    private static class Venda {
-        private int quantidade;
-        private double valorVenda;
-        private double desconto;
+     public static class Venda {
+        int quantidade;
+        double valorVenda;
+        double desconto;
 
         public Venda(int quantidade, double valorVenda, double desconto) {
             this.quantidade = quantidade;
