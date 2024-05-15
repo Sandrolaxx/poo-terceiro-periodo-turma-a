@@ -1,4 +1,4 @@
-package primeirobimestre.Segundobimestre.Segundobi.Exemplos.Aulas.Auladois;
+package primeirobimestre.Segundobimestre.Segundobi.Exemplos.Aulas.Auladois.AulaDois;
 import java.util.Set; 
 import java.util.HashSet; 
 
