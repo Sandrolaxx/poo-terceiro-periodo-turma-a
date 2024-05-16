@@ -22,15 +22,17 @@ public class QueueSample {
         
         //Fila de nomes com implementação que respeita ordem natural
         //Ordem natural de String - Alfabetica
-        Queue<String> nomes = new PriorityQueue<>();
-
+        Queue<String> nomes = new LinkedList<>();
+        
         nomes.add("Gabriel Schiestl");
         nomes.add("Hebernald");
         nomes.add("Cleiton");
         nomes.add("Leonardo");
+        
+        Queue<String> nomesOrdenados = new PriorityQueue<>(nomes);
 
         //Printando lista
-        nomes.forEach(nome -> System.out.println(nome));
+        nomesOrdenados.forEach(nome -> System.out.println(nome));
 
         //Mesma coisa do exemplo acima*
         for (String nome : nomes) {
