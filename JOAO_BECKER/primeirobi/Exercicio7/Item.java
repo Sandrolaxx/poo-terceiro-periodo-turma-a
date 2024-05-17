@@ -2,23 +2,23 @@ package primeirobi.Exercicio7;
 
 public class Item {
     
-    private Integer id;
+    private String id;
     private String nome;
     private String tipo;
     private Double valor;
     
-    public Item(Integer id, String nome, String tipo, Double valor) {
+    public Item(String id, String nome, String tipo, Double valor) {
         this.id = id;
         this.nome = nome;
         this.tipo = tipo;
         this.valor = valor;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

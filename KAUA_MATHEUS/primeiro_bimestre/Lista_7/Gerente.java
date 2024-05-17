@@ -1,33 +1,48 @@
-package KAUA_MATHEUS.primeiro_bimestre.Lista_6;
+package KAUA_MATHEUS.primeiro_bimestre.Lista_7;
 
-public class Gerente extends Vendedor{
+public class Gerente implements Pessoa{
 
-    public Gerente(String name, int age, Loja Store, String state, 
-    String number, String complement, String city, 
-    String neighborhood, String street, 
-    float[] wage_received, 
-    float base_wage) {
-        super(name, age, Store, state, number, complement,
-        city, neighborhood, street, wage_received, base_wage);
-        //TODO Auto-generated constructor stub
+    private String name;
+    private int age;
+    private float base_wage;
+    private float[] wage_received;
+
+    private Endereco address;
+    private Loja store;
+
+    public void setPessoa(String name, int age, Endereco address,
+    float base_wage, float[] wage_received, Loja store){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.base_wage = base_wage;
+        this.wage_received = wage_received;
+        this.store = store;
+    }
+
+    public void apresentarSe(){
+        System.out.printf("Olá, meu nome é %s!\n", this.name);
+        System.out.printf("Idade: %d\n", this.age);
+    }
+
+    public void enderecoApresenta(){
+        System.out.printf("Rua %s, %s - %s\n", address.street, 
+        address.neighborhood, address.city);
     }
 
     @Override
-    float calcularBonus() {
+    public float calcular_bonus() {
         return base_wage * 0.35f;
     }
 
-    /*
-     * 1. Crie um classe Gerente:
-        - Com os atributos nome, idade, Loja, cidade, bairro, rua, salarioBase e salarioRecebido.
-        - Atributo salarioRecebido DEVE armazenar no mínimo três valores de lançamentos de salário.(Pode colocar no código os valores*)
-        - Métodos apresentarse calcularMedia e calcularBonus.
-        - Método apresentarse deve printar o nome, idade e Loja.
-        - calcularMedia deve trazer a média dos salários.
-        - calcularBonus onde a fórmula é [salarioBase * 0.35].
-     */
+    @Override
+    public float calcular_media() {
+        float median = 0;
 
-
-    
+        for (int i = 0; i < wage_received.length; i++) {
+            median = median + wage_received[i];
+        }
+        return median / wage_received.length;
+    }
 
 }

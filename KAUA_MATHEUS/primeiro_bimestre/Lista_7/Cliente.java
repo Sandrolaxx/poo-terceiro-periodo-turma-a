@@ -1,40 +1,28 @@
-package KAUA_MATHEUS.primeiro_bimestre.Lista_6;
+package KAUA_MATHEUS.primeiro_bimestre.Lista_7;
 
-public class Cliente extends Endereco{
+public class Cliente implements Pessoa{
 
-    // Cores
-    String red = "\u001B[31m";
-    String green = "\u001B[32m";
-    String yellow = "\u001B[33m";
-    String standart = "\u001B[m";
-    
-    // Criação de Atributos
+    private String name;
+    private int age;
 
-    String name;
-    int age;
+    private Endereco address;
+    private Loja store;
 
-    public Cliente(String name, int age,
-    String state, String number, String complement,
-    String city, String neighborhood, String street){
-
-        // Construtor da Classe Cliente
+    public void setPessoa(String name, int age, 
+    Endereco address){
         this.name = name;
         this.age = age;
-        this.city = city;
-        this.neighborhood = neighborhood;
-        this.street = street;
-        this.city = city;
-        this.neighborhood = neighborhood;
-        this.complement = complement;
-        this.street = street;
-        this.number = number;
-        this.state = state;
-
+        this.address = address;
     }
 
-    void apresentarSe(){
-        System.out.printf("Meu nome é %s%s%s e tenho %s%d%s anos!\n",green, this.name, standart, green, this.age, standart);
-        System.out.printf("Endereço: Rua %s%s, %s - %s%s\n", green, this.street, this.neighborhood, this.city, standart);
+    public void apresentarSe(){
+        System.out.printf("Olá, meu nome é %s!\n", this.name);
+        System.out.printf("Idade: %d\n", this.age);
+    }
+
+    public void enderecoApresenta(){
+        System.out.printf("Rua %s, %s - %s\n", address.street, 
+        address.neighborhood, address.city);
     }
 
 }

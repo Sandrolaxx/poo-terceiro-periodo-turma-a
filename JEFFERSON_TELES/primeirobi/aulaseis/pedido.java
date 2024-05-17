@@ -41,26 +41,50 @@ public class Pedido {
     }
 
     public void gerarDescricaoVenda() {
-        System.out.println("Data de Criação: " + dataCriacao);
-        System.out.println("Valor Total do Pedido: " + calcularValorTotal());
+        System.out.println("DATA DE CRIACAO: " + dataCriacao);
+        System.out.println("VALOR TOTAL DO PEDIDO: " + calcularValorTotal());
     }
 
     public void apresentarSe() {
-        System.out.println("ID do Pedido: " + id);
-        System.out.println("Data de Criação: " + dataCriacao);
-        System.out.println("Data de Pagamento: " + dataPagamento);
-        System.out.println("Data de Vencimento da Reserva: " + dataVencimentoReserva);
-        System.out.println("Cliente: " + cliente.getNome());
-        System.out.println("Vendedor: " + vendedor.getNome());
-        System.out.println("Loja: " + loja.getNome());
-        System.out.println("Itens do Pedido:");
+        System.out.println("ID DO PEDIDO: " + id);
+        System.out.println("DATA DE CRIACAO: " + dataCriacao);
+        System.out.println("DATA DE PAGAMENTO: " + dataPagamento);
+        System.out.println("DATA DE VENCIMENTO DA RESERVA: " + dataVencimentoReserva);
+        System.out.println("CLIENTE: " + cliente.getNome());
+        System.out.println("VENDEDOR: " + vendedor.getNome());
+        System.out.println("LOJA: " + loja.getNome());
+        System.out.println("ITENS DO PEDIDO:");
         for (Item item : itens) {
             item.gerarDescricao();
         }
-        System.out.println("Valor Total do Pedido: " + calcularValorTotal());
+        System.out.println("VALOR TOTAL DO PEDIDO: " + calcularValorTotal());
     }
 
     public void setDataPagamento(Date dataAtual) {
         this.dataPagamento = dataAtual;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public Vendedor getVendedor() {
+        return vendedor;
+    }
+
+    public Loja getLoja() {
+        return loja;
+    }
+
+    public int getIdPedido() {
+        return id;
+    }
+
+    public Date getDataCriacao() {
+        return dataCriacao;
+    }
+
+    public List<Item> getItens() {
+        return itens;
     }
 }

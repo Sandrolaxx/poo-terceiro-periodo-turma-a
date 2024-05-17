@@ -1,23 +1,15 @@
-package KAUA_MATHEUS.primeiro_bimestre.Lista_6;
+package KAUA_MATHEUS.primeiro_bimestre.Lista_7;
 
-public abstract class Pessoa{
-    
-    protected String name;
-    protected int age;
-    Endereco endereco;
+public abstract interface Pessoa{
 
-    void setPessoa(String name, int age, Endereco endereco){
-        this.name = name;
-        this.age = age;
-        this.endereco = endereco;
-    }
+    void setPessoa();
 
-    void apresentarSe(){
-        System.out.printf("Olá, meu nome é %s!\n", this.name);
-        System.out.printf("Idade: %d\n", this.age);
-    }
+    void apresentarSe();
 
-    void enderecoApresenta(){
-        System.out.printf("Rua %s, %s - %s\n", this.street, this.neighborhood, this.city);
-    }
+    void enderecoApresenta();
+
+    float calcular_media();
+
+    float calcular_bonus();
+
 }

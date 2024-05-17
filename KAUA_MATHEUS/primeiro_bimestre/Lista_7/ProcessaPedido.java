@@ -1,11 +1,15 @@
-package KAUA_MATHEUS.primeiro_bimestre.Lista_6;
+package KAUA_MATHEUS.primeiro_bimestre.Lista_7;
 import java.util.Date;
 
 import javax.xml.crypto.Data;
 
 public class ProcessaPedido{
     
-    Pedido order;
+    private Pedido order;
+
+    public void setPedido(Pedido order){
+        this.order = order;
+    }
 
     private boolean confirmarPagamento(){
         order.vencimento = (order.dataVencimento.getTime()/order.day) - (order.dataCriacao.getTime()/order.day);

@@ -11,7 +11,7 @@ public class MyyPlant {
 
         while (contador != 0) {
 
-            System.out.println("Escolha uma opção para o sistema:\n 1. Calcular media e bonus dos salários e verificar o salario recebido, apresentar vendedores e gerente\n 2. Apresentar cliente(s) \n 3. Apresentar informacoes da loja \n 4. Realizar pedido \n 0: Encerrar sistema");
+            System.out.println("Lista 6 Escolha uma opção para o sistema:\n 1. Calcular media e bonus dos salários e verificar o salario recebido, apresentar vendedores e gerente\n 2. Apresentar cliente(s) \n 3. Apresentar informacoes da loja \n 4. Realizar pedido \n 0: Encerrar sistema");
             contador = scan.nextInt();
 
             switch (contador) {
