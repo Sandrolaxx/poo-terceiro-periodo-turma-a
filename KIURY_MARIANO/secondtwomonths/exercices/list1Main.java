@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 // import java.util.Scanner;
 
-public class main {
+public class list1Main{
 
     public static void main(String[] args) {
 
