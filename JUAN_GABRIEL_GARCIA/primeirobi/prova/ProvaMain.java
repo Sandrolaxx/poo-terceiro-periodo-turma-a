@@ -1,4 +1,4 @@
-package primeirobi.prova;
+package JUAN_GABRIEL_GARCIA.primeirobi.prova;
 
 import java.util.Scanner;
 

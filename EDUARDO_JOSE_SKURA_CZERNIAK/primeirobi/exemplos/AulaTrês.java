@@ -2,8 +2,6 @@ package primeirobi.exemplos;
 
 public class AulaTrês {
     public static void main(String[] args) {
-        int[][] matrizDeclarada;
-        int[][] matrizTeste = new int[3][3];
         int[][] matriz = new int[][] {{32,14},{62,11}};
         System.out.println(matriz[0][0]); // 32
         System.out.println(matriz[0][1]); // 14
