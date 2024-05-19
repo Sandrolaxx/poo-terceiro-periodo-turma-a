@@ -65,7 +65,7 @@ public class Main {
 
 
         // ATV5
-        System.out.println("\nATV4");
+        System.out.println("\nATV5");
         escrevePc();
 
     }
@@ -85,19 +85,46 @@ public class Main {
         return novalista;
     }
 
+    // ATV5
+    public static void escrevePc(){
+
+        Scanner leitor = new Scanner(System.in);
+
+        String tipo, componente;
+        boolean cont = true;
+        Map <String, String> mapaComponentes = new HashMap<>();
+
+        while(cont){
+            System.out.println("Qual o tipo do componente? ");
+            tipo = leitor.nextLine();
+
+            System.out.println("Componente: ");
+            componente = leitor.nextLine();
+
+            mapaComponentes.put(tipo, componente);
+
+            System.out.println("Continuar? ");
+            if(leitor.nextLine().equals("S")){
+                cont = true;
+            }
+            else{
+                cont = false;
+            }
+        }
+        System.out.println(mapaComponentes);
+
+    }
+
     // ATV4 Método
     public static void melhoresFilmes(){
         Queue<String> listaQueue = new PriorityQueue<>();
-        try (Scanner leitor = new Scanner(System.in)) {
+        Scanner leitor = new Scanner(System.in);
 
             for (int i = 0; i < 5; i++) {
 
                 System.out.printf("Digite o filme Nº%s: \n", i+1);
                 listaQueue.add(leitor.nextLine());
             }
-        }catch(Exception e){
-            System.out.println("Opa, ocorreu um Erro! " + e);
-        }
         System.out.println("\nAqui está a sua lista! ");
         System.out.println();
         int quant = listaQueue.size();
@@ -107,37 +134,4 @@ public class Main {
         
     }
   
-    // ATV5
-    public static void escrevePc(){
-
-        try (Scanner leitor = new Scanner(System.in)) {
-
-            String tipo, componente;
-            boolean cont = true;
-            Map <String, String> mapaComponentes = new HashMap<>();
-
-            while(cont){
-                System.out.println("Qual o tipo do componente? ");
-                tipo = leitor.nextLine();
-
-                System.out.println("Componente: ");
-                componente = leitor.nextLine();
-
-                mapaComponentes.put(tipo, componente);
-
-                System.out.println("Continuar? ");
-                if(leitor.nextLine().equals("S")){
-                    cont = true;
-                }
-                else{
-                    cont = false;
-                }
-            }
-            System.out.println(mapaComponentes);
-            
-        }catch(Exception e){
-            System.out.println("Opa, Aconteceu um erro!! " + e);
-        }
-
-    }
 }

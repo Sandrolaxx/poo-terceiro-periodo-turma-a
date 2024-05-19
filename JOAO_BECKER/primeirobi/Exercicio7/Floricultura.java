@@ -65,7 +65,7 @@ public class Floricultura {
                         break;
 
                     case 6:
-                        Gerente gerenteUm = new Gerente(null, null, null, null, null, null, null, null, null);
+                        Gerente gerenteUm = new Gerente(null, null, null, null, null, null);
                         System.out.println("Nome: ");
                         gerenteUm.setNome(scanner.next());
                         System.out.println("Idade: ");

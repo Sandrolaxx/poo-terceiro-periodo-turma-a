@@ -65,7 +65,6 @@ public class Gerente extends Endereco {
         for (double preco : salarioRecebido) {
             media += preco;
         }
-
         System.out.println("Media de salarios: " + (media / 3));
     }
 

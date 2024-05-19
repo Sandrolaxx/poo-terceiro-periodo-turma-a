@@ -15,7 +15,7 @@ public class ProvaMain {
         while (escolha != 0) {
 
             System.out.println(
-                    "\nEscolha um das opções abaixo:\n1. Cadastrar aluno\n2. Cadastrar livro\n3. Buscar livro\n4. Realizar devolução\n5. Listar livros");
+                    "\nEscolha um das opções abaixo:\n1. Cadastrar aluno\n2. Cadastrar livro\n3. Buscar livro\n4. Realizar devolução\n5. Listar livros\n0. Encerrar sistema");
             escolha = scan.nextInt();
 
             switch (escolha) {
