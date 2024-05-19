@@ -1,5 +1,4 @@
-package MATEUS_MASSUCATTO_DUARTE.primeirobimestre.prova;
-
+package ProvaPB;
 import java.util.Date;
 import java.util.Scanner;
 public class Main 

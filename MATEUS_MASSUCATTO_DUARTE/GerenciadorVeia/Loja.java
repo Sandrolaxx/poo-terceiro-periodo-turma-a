@@ -1,13 +1,18 @@
+package GerenciadorVeia;
+
 public class Loja 
 {   
 
     private String nomeFantasia;
+    @SuppressWarnings("unused")
     private String razaoSocial;
     private int cnpj;
     private String cidadeL;
     private String bairroL;
     private String ruaL;
+    @SuppressWarnings("unused")
     private int numeroL;
+    @SuppressWarnings("unused")
     private String complementoL;
 
     public Loja(String nomeFantasia, String razaoSocial, int cnpj, String cidadeL, String bairroL, String ruaL, int numeroL, String complementoL)

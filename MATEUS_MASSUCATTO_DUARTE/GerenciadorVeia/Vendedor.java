@@ -1,12 +1,18 @@
+package GerenciadorVeia;
 public class Vendedor 
 {
     private String nomeV;
     private int idadeV;
     private String loja;
+    @SuppressWarnings("unused")
     private String cidadeV;
+    @SuppressWarnings("unused")
     private String bairroV;
+    @SuppressWarnings("unused")
     private String ruaV; 
+    @SuppressWarnings("unused")
     private int numeroV;
+    @SuppressWarnings("unused")
     private String complementoV;
     private double SalarioBase;
     private double SalarioRecebido;
