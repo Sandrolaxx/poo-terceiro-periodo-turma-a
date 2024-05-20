@@ -1,4 +1,4 @@
-package ListaSete;
+package listasete2;
 
 public class Pessoa extends Objeto {
     
