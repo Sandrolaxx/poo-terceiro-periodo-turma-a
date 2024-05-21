@@ -1,4 +1,4 @@
-package segundobimestre.listas;
+package segundobimestre.listas.Main;
 
 import java.util.ArrayList;
 import java.util.Collections;
