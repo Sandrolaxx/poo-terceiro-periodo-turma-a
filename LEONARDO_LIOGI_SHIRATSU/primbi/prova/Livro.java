@@ -1,4 +1,4 @@
-package LEONARDO_LIOGI_SHIRATSU.primbi.prova;
+package primbi.prova;
 
 public class Livro {
     protected String nomeLivro;

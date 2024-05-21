@@ -1,4 +1,4 @@
-package ListaSete;
+package listasete2;
 
 import java.util.List;
 import java.util.Scanner;
@@ -16,17 +16,23 @@ public class MyyPlant {
         loja.apresentarSe();
         loja.adicionarEndereco(endereco);
 
+
+
         System.out.println("\n=====================================================================================");
         System.out.println("INFORMAÇÕES DO GERENTE DA LOJA");
         Gerente gerente = new Gerente(0, null, 0, null);
         loja.adicionarGerente(gerente);
         gerente.apresentarSe();
 
+
+
         System.out.println("\n=====================================================================================");
         System.out.println("INFORMAÇÕES DO VENDEDOR");
         Vendedor vendedor = new Vendedor(0, null, 0, null);
         loja.adicionarVendedor(vendedor);
         vendedor.apresentarSe();
+
+
 
         System.out.println("\n=====================================================================================");
         System.out.println("INFORMAÇÕES DO CLIENTE");
@@ -35,17 +41,23 @@ public class MyyPlant {
         int quantCliente = scanner.nextInt();
         System.out.println("-------------------------------------------------------------------------------------");
 
+
+
         for (int i = 0; i < quantCliente; i++) {
             Cliente cliente = new Cliente(i, "", 0);
             cliente.apresentarSe();
             loja.adicionarCliente(cliente);
         }
 
+
+
         System.out.println("\n=====================================================================================");
         System.out.println("INFORMAÇÕES DOS ITENS");
         System.out.println("\n-------------------------------------------------------------------------------------");
         System.out.print("INFORME A QUANTIDADE DE ITENS QUE DESEJA CRIAR: ");
         int quantItens = scanner.nextInt();
+
+
 
         for (int i = 0; i < quantItens; i++) {
             Item item = new Item(i, null, null, 0);
@@ -54,8 +66,11 @@ public class MyyPlant {
             loja.adicionarItem(item);            
         }
 
+
+
         Cliente clienteSelecionado = loja.selecionarCliente();
         List<ItemVenda> itensComprados = loja.fazerVenda(clienteSelecionado);  
+
 
 
         System.out.println("\n=====================================================================================");
@@ -66,6 +81,7 @@ public class MyyPlant {
         pedido.gerarDescricaoVenda();
         ProcessaPedido processador = new ProcessaPedido(loja);
         processador.processar(clienteSelecionado, pedido);
+        
         System.out.println("=====================================================================================");
 
 

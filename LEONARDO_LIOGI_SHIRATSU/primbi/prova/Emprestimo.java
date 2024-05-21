@@ -1,4 +1,4 @@
-package LEONARDO_LIOGI_SHIRATSU.primbi.prova;
+package primbi.prova;
 
 import java.util.List;
 import java.util.Date;

@@ -2,10 +2,6 @@ package primeirobim.listaseis;
 
 import java.util.Scanner;
 
-//Criar uma classe Item com:
-//Atribuitos id, nome, tipo, valor.
-//Método gerarDescricao, printa o id do item, nome, tipo e valor.
-
 public class Item {
 
     public int id;
