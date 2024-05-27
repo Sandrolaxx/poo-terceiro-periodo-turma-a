@@ -22,4 +22,10 @@ public class mapExemple{
         System.out.println(mapaTest.entrySet());
 
     }
+
+    // Somar todas as strings unicas de um array utilizando streamAPI e passar para um HashMap
+    // Map<String, Integer> listacontagem = lista_palavras.stream()
+        //     .collect(
+        //         Collectors
+        //             .toMap(palavra -> palavra, palavra -> 1, Integer::sum));
 }
