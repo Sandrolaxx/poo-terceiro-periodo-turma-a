@@ -87,6 +87,7 @@ public class Main {
     }
 
     public static Item[] adicionarItemNoEstoque(Item[] estoque){
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Cadastro de Item");
         System.out.print("Informe o ID do item: ");
