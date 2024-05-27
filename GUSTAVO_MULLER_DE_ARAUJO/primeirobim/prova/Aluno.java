@@ -1,4 +1,4 @@
-package GUSTAVO_MULLER_DE_ARAUJO.primeirobim.prova;
+package primeirobim.prova;
 
 import java.util.Scanner;
 

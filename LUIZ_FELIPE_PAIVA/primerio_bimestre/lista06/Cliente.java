@@ -10,7 +10,7 @@ class Cliente {
     int numero;
     String complemento;
 
-    public Cliente(String nome, int idade, String estado, String cidade, String bairro, String rua, int numero, String complemento) {
+    public Cliente(String nome, int idade, String estado, String cidade, String bairro, int numero, String complemento) {
         this.nome = nome;
         this.idade = idade;
         this.estado = estado;

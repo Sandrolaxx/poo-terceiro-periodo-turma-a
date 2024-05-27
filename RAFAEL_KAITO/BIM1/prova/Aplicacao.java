@@ -1,4 +1,4 @@
-package RAFAEL_KAITO.BIM1.prova;
+package BIM1.prova;
 
 import java.util.Scanner;
 import java.util.Date;

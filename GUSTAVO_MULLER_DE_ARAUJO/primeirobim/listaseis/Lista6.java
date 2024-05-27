@@ -4,11 +4,6 @@ import java.util.Scanner;
 
 public class Lista6 {
 
-        // ENTREGAR HOJE 22/04
-
-        //PRINTAR ENDEREÇO DE UMA MANEIRA INTERESSANTE
-
-
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
