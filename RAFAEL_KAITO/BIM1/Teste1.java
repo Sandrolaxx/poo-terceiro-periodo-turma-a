@@ -10,7 +10,7 @@ public class Teste1
         int opc;
         do
         {
-            System.out.println("\nSeleciona a ação:\n[1]Cálculon de preço total\n[2]Cálculo de troco\n[3]Sair");
+            System.out.println("\nSeleciona a ação:\n[1]Cálculo de preço total\n[2]Cálculo de troco\n[3]Sair");
             opc = scanner.nextInt();
 
             switch(opc)

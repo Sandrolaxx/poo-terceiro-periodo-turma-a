@@ -15,6 +15,7 @@ public class Gerente extends Pessoa{
         this.salarioRecebido = salarioRecebido;
     }
 
+    
     public void apresentarse()
         {
             System.out.println("Me chamo " + nome + " tenho " + idade + "anos," + " sou da loja "+ loja + "\n");

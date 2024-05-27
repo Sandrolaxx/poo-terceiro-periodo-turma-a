@@ -16,11 +16,7 @@ public class Endereco {
         this.numero = numero;
         this.complemento = complemento;
     }
-
-    public void apresentarLogradouro(){
-        System.out.println("Endereço: ".concat(cidade).concat(", ").concat(estado).concat("\n").concat(rua)
-        .concat(", ").concat(numero).concat("\n").concat(bairro).concat(", ").concat(complemento));
-
-        return;
+    public String toString(){
+        return cidade + ", " + estado + ", " + rua + ", " + numero + ", " + bairro + ", "+ complemento;
     }
 }
