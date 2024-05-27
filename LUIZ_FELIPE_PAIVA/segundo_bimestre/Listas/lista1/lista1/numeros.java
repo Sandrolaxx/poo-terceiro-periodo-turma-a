@@ -1,4 +1,4 @@
-package segundo_bimestre.Listas.lista1;
+package segundo_bimestre.Listas.lista1.lista1;
 import java.util.HashSet;
 
 public class numeros {
