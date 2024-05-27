@@ -5,7 +5,7 @@ import java.util.Date;
 public class MyyPlant {
     public static void main(String[] args) {
         Vendedor vendedor1 = new Vendedor("João", 30, "Myy Plant", "São Paulo", "Centro", "Rua A", 1500.0);
-        Cliente cliente1 = new Cliente("Maria", 45, "São Paulo", "Jardins", "Avenida B");
+        Cliente cliente1 = new Cliente("Maria", 45, "São Paulo", "Jardins", "Avenida B", 34, "casa");
         Gerente gerente1 = new Gerente("Antônio", 50, "Myy Plant", "São Paulo", "Perdizes", "Rua C", 5000.0);
         Endereco endereco1 = new Endereco("São Paulo", "São Paulo", "Centro", 123, "Próximo à Praça da Sé");
         Loja loja = new Loja("Myy Plant", "Floricultura Myy Plant", "987957321");
@@ -50,7 +50,7 @@ public class MyyPlant {
 
         int idPedido = 2;
         Date dataCriacao = new Date();
-        Cliente cliente = new Cliente("Pedro", 35, "São Paulo", "Vila Madalena", "Rua D");
+        Cliente cliente = new Cliente("Pedro", 35, "São Paulo", "Vila Madalena", "Rua D", 67, "casa");
         Vendedor vendedor = new Vendedor("Ana", 28, "Myy Plant", "São Paulo", "Jardim Paulista", "Rua E", 1300.0);
         
         ProcessaPedido processador = new ProcessaPedido();

@@ -1,4 +1,4 @@
-package ListaSete;
+package listasete2;
 
 import java.util.Scanner;
 
@@ -19,54 +19,62 @@ class Endereco extends Objeto {
         this.complemento = complemento;
     }
 
+
+
     protected String getEstado() {
         return estado;
     }
-
     protected void setEstado(String estado) {
         this.estado = estado;
     }
 
+
+
     protected String getCidade() {
         return cidade;
     }
-
     protected void setCidade(String cidade) {
         this.cidade = cidade;
     }
 
+
+
     protected String getBairro() {
         return bairro;
     }
-
     protected void setBairro(String bairro) {
         this.bairro = bairro;
     }
 
+
+
     protected String getRua() {
         return rua;
     }
-
     protected void setRua(String rua) {
         this.rua = rua;
     }
 
+
+
     protected int getNumero() {
         return numero;
     }
-
     protected void setNumero(int numero) {
         this.numero = numero;
     }
 
+
+
     protected String getComplemento() {
         return complemento;
     }
-
     protected void setComplemento(String complemento) {
         this.complemento = complemento;
     }
 
+
+    
     protected void apresentarLogradouro() {
         Scanner scanner = new Scanner(System.in);
 

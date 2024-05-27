@@ -1,4 +1,4 @@
-package PEDRO_HENRIQUE_GULIGURSKI.primeirobimestre.prova;
+package primeirobimestre.prova;
 
 import java.util.Date;
 

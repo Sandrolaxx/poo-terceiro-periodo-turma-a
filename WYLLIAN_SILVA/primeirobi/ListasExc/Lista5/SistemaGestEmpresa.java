@@ -17,7 +17,7 @@ public class SistemaGestEmpresa {
         String cidadeLoja = scanner.nextLine();
         System.out.println("Digite o bairro de sua loja:");
         String bairroLoja = scanner.nextLine();
-        System.out.println("Digite a rua da loja:");
+        System.out.println("Digite a rua da loja:");    
         String ruaLoja = scanner.nextLine();
         System.out.println(" ");
 

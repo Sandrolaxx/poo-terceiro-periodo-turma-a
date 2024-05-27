@@ -1,7 +1,5 @@
 package primeirobim.listaseis;
 
-//PRINTAR ENDEREÇO DE UMA MANEIRA INTERESSANTE
-
 public class Endereco {
 
     public String estado;
