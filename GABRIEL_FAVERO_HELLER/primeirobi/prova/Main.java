@@ -1,4 +1,4 @@
-package GABRIEL_FAVERO_HELLER.primeirobi.prova;
+package primeirobi.prova;
 
 import java.util.Scanner;
 // import java.util.ArrayList;
@@ -15,8 +15,6 @@ public class Main {
     private static Livro[] livros = new Livro[10];
     private static Livro[] emprestados = new Livro[10];
     // private static List<Livro> lista = new ArrayList<>();
-
-    
 
     public static void main(String[] args) {
 

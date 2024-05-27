@@ -1,4 +1,4 @@
-package HEITOR_FOLTRAN.primeirobi.prova;
+package primeirobi.prova;
 
 public class Livro {
     private String titulo;

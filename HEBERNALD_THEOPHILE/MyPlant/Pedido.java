@@ -20,8 +20,8 @@ public class Pedido {
         this.loja = loja;
         this.itens = itens;
 
-        // Definir data de vencimento da reserva (3 dias após a criação do pedido)
-        long tresDiasEmMillis = 3 * 24 * 60 * 60 * 1000; // 3 dias em milissegundos
+      
+        long tresDiasEmMillis = 3 * 24 * 60 * 60 * 1000; 
         this.dataVencimentoReserva = new Date(dataCriacao.getTime() + tresDiasEmMillis);
     }
 

@@ -56,7 +56,7 @@ public class StreamApi {
                 new Aluno("Schiestl", 27),
                 new Aluno("Raul", 20),
                 new Aluno("Pedro", 18));
-
+        
         Integer totalIdade = alunos.stream()
                 .map(aluno -> aluno.getAge())
                 .reduce(0, (vl1, vl2) -> vl1 + vl2);

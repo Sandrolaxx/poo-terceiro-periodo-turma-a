@@ -1,4 +1,4 @@
-package JOAO_BECKER.primeirobi.Prova;
+package primeirobi.Prova;
 
 public class Aluno {
     private String nome;
