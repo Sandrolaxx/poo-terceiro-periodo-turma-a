@@ -1,4 +1,4 @@
-package RAFAEL_KAITO.BIM1.prova;
+package BIM1.prova;
 
 public class Livro {
     private String titulo;

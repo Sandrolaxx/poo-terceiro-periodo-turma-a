@@ -40,7 +40,6 @@ public class MyyPlant {
                     cadastrarItem();
                     break;
                     
-
                 case 2:
                     criarPedido(cliente1, loja1, vendedor1, items);
                     break;
@@ -77,14 +76,14 @@ public class MyyPlant {
         System.out.println("Id: ");
         String id = scanner.next();
         System.out.println("Nome: ");
-        String name = scanner.next();
+        String nome = scanner.next();
         System.out.println("Tipo: ");
         String tipo = scanner.next();
         System.out.println("Valor: ");
         double valor = scanner.nextDouble();
         for (int i = 0; i <= items.length; i++) {
             if (items[i] == null) {
-                items[i] = new Item(id, name, tipo, valor);
+                items[i] = new Item(id, nome, tipo, valor);
                 break;
             }
         }   

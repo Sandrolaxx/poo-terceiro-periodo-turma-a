@@ -56,9 +56,10 @@ public class Pedido extends Item {
 
     public void gerarDescricaoVenda () {
 
+       
+        Date dataVencida = new Date(); 
         Date date = new Date();
         System.out.println("Data de criação do pedido: " + date);
-        Date dataVencida = new Date();
         dataVencida.setDate(dataVencida.getDate() + 3);
         System.out.println("Data de vencimento do pedido: " + dataVencida);
 

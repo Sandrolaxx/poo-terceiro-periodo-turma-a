@@ -1,4 +1,4 @@
-package GABRIEL_FAVERO_HELLER.primeirobi.prova;
+package primeirobi.prova;
 
 public class Aluno {
     private String nome;

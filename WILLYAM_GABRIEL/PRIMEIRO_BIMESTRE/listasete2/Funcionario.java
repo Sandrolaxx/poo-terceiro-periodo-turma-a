@@ -1,4 +1,4 @@
-package ListaSete;
+package listasete2;
 
 import java.util.ArrayList;
 
@@ -12,6 +12,8 @@ public class Funcionario extends Pessoa {
         this.salarioBase = salarioBase;
     }
 
+
+
     protected double getSalarioBase() {
         return salarioBase;
     }
@@ -20,9 +22,14 @@ public class Funcionario extends Pessoa {
         this.salarioBase = salarioBase;
     }
 
+
+
+
     protected void adicionarSalario(double salario) {
         salarioRecebido.add(salario);
     }
+
+
 
     protected double calcularMedia() {
         double soma = 0;
@@ -32,6 +39,8 @@ public class Funcionario extends Pessoa {
         return soma / salarioRecebido.size();
     }
 
+
+    
     protected double calcularBonus() {
         return 0;
     }
