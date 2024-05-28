@@ -1,4 +1,4 @@
-package IAN_SIVERIS.primeirobi.floricultura;
+package primeirobi.floricultura;
 import java.util.Scanner;
 
 public class exercicio2 {

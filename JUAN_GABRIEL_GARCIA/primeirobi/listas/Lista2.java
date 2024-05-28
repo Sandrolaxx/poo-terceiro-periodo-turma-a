@@ -82,10 +82,8 @@ public class Lista2 {
                             vetor_venda[tamanho] = valor_total;
                             vetor_desconto[tamanho] = 0;
                         }
-
                         tamanho++;
                     }
-
                     break;
 
                 case 2:
