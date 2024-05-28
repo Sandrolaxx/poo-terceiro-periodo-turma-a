@@ -1,11 +1,9 @@
 package segundobi.listas.lista2;
 import java.util.ArrayList;
-import java.util.Collections;
+
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -32,11 +30,11 @@ public class Main {
         //ATV 4
 
         System.out.println("\nAtividade 4:");
-        List<Produto> produtos = new ArrayList<>();
-        produtos.add(new Produto("Celular", 2000d));
-        produtos.add(new Produto("Mesa", 500d));
-        produtos.add(new Produto("Casaco", 80d));
-        produtos.add(new Produto("Energetico", 12d));
+        List<Produto> produtos =         List.of(
+            new Produto("Celular", 2000d),
+            new Produto("Mesa", 500d),
+            new Produto("Casaco", 80d),
+            new Produto("Energetico", 12d));
         System.out.println(filtrarProduto(produtos));
 
         //ATV 5
@@ -69,9 +67,9 @@ public class Main {
 
     public static void verificarRepeticao(List<String> lista){
         Map<String, Long> listaContar = lista.stream()
-            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting())); 
-        listaContar.forEach((palavra,quantidade) -> 
-        System.out.println("'" + palavra + "' aparece " + quantidade + " vez(es)"));
+            .collect(Collectors.groupingBy(item -> item, Collectors.counting())); 
+        listaContar.forEach((key,value) -> 
+        System.out.println("'" + key + "' aparece " + value + " vez(es)"));
         
     }
 
