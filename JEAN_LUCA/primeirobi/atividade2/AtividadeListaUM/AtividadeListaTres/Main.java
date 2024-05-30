@@ -15,7 +15,7 @@ public class Main {
 
         //ATV3
 
-        int resultado= JOptionPane.showConfirmDialog(null,"Voce quer continuar?","atencao",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
+        int resultado= JOptionPane.showConfirmDialog(null,"Voce quer continuar?","Atencao",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
 
         if (resultado==JOptionPane.YES_NO_OPTION) {
         JOptionPane.showMessageDialog(null, "ok, aguarde alguns segundos");
@@ -24,7 +24,7 @@ public class Main {
         "Erro",JOptionPane.ERROR_MESSAGE);
         }
            //ATV4
-        String operatorr = JOptionPane.showInputDialog(null,"entre com os numeros:(1) ou (2) ou (3)","lista",JOptionPane.QUESTION_MESSAGE);
+        String operatorr = JOptionPane.showInputDialog(null,"entre com os numeros:(1) ou (2) ou (3)","Lista",JOptionPane.QUESTION_MESSAGE);
         int operator = Integer.parseInt(operatorr);
         switch (operator) {
 
