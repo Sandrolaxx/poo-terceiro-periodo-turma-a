@@ -5,19 +5,19 @@ import java.util.Arrays;
 import java.util.Map;
 
 class Produto {
-    private String nome;
-    private double preco;
+    private String Nome;
+    private double Preco;
 
-    public Produto(String nome, double preco) {
-        this.nome = nome;
-        this.preco = preco;
+    public Produto(String Nome, double Preco) {
+        this.Nome = Nome;
+        this.Preco = Preco;
     }
 
     public String getNome() {
-        return nome;
+        return Nome;
     }
     public double getPreco() {
-        return preco;
+        return Preco;
     }
 }
 
