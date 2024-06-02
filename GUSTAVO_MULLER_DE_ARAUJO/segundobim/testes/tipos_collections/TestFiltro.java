@@ -1,4 +1,4 @@
-package segundobim.testes.streams;
+package segundobim.testes.tipos_collections;
 
 import java.util.ArrayList;
 import java.util.List;
