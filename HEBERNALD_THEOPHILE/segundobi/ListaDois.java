@@ -3,7 +3,7 @@ import java.util.stream.Collectors;
 
 public class ListaDois {
     public static void main(String[] args) {
-        // ATIVIDADE 1:lista de números inteiros e retornar apenas os números pares
+        // ATIVIDADE 1: lista de números inteiros e retornar apenas os números pares
         
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         List<Integer> numerosPares = numeros.stream()
@@ -11,7 +11,7 @@ public class ListaDois {
         .collect(Collectors.toList());
         System.out.println("ATIV1 - Números pares: " + numerosPares);
 
-        // ATIVIDADE 2: Converter todos os nomes para letras maiúsculas
+        // ATIVIDADE 2: converter todos os nomesm para letras maiúsculas
         List<String> nomes = Arrays.asList("roberto", "josé", "caio", "vinicius");
         List<String> nomesMaiusculos = nomes.stream()
         .map(String::toUpperCase)
@@ -24,7 +24,7 @@ public class ListaDois {
         .collect(Collectors.groupingBy(p -> p, Collectors.counting()));
         System.out.println("ATIV3 - Frequência das palavras: " + frequenciaPalavras);
 
-        // ATIVIDADE 4: Filtrar produtos com preço maior que R$ 100,00
+        // ATIVIDADE 4: Filtrar  produtos com preço maior que R$ 100,00
         List<Produto> produtos = Arrays.asList(
          new Produto("Produto 1", 20.0),
          new Produto("Produto 2", 70.0),
@@ -36,7 +36,7 @@ public class ListaDois {
         .collect(Collectors.toList());
         System.out.println("ATIV4 - Produtos com preço > R$ 100,00: " + produtosCaros);
 
-        // ATIVIDADE 5: Somar o valor total dos produtos
+        // ATIVIDADE 5: somar  valor total dos produtos 
         double somaTotal = produtos.stream()
      .mapToDouble(Produto::getPreco)
         .sum();

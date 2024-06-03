@@ -23,7 +23,7 @@ public class ListaUm {
         numeros.add(5);
         numeros.add(10);
         numeros.add(15);
-        numeros.add(5); // Aqui o numero repetido 
+        numeros.add(5); // Aqui o número repetido  
 
         int numeroVerificar = 10;
         System.out.println("\nATIV2 - Verifica se o conjunto contém o número " + numeroVerificar + ":");
