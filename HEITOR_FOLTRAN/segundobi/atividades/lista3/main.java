@@ -3,6 +3,7 @@ package lista3;
 import javax.swing.JOptionPane;
 
 //ATV 5
+
 class Excecao extends Exception{
     public Excecao(String message){
         super(message);
@@ -14,15 +15,19 @@ public class main {
     public static void main(String[] args) {
 
         //ATV 1
+
         JOptionPane.showMessageDialog(null, "BOM DIA MEU CONSAGRADO");        
 
+
         //ATV 2
+
         String nomePessoa = JOptionPane.showInputDialog("Qual é o seu nome?");
         nomePessoa = nomePessoa.toUpperCase();
         String boasVindas = "BOM DIA MEU CARO " + nomePessoa + ", SEJA BEM-VINDO";
         JOptionPane.showMessageDialog(null, boasVindas);
 
         //ATV 3
+
         int resposta = JOptionPane.showConfirmDialog(null, "QUER CONTINUAR?", "ContinuarOuNao", JOptionPane.YES_NO_OPTION);
 
         if (resposta == JOptionPane.YES_OPTION){
@@ -32,7 +37,9 @@ public class main {
             JOptionPane.showMessageDialog(null, "VOCÊ NÃO QUIS CONTINUAR");
         }
 
+
         //ATV 4
+
         String[] opcoes = {"PETE", "REPETE", "O CACHORRO QUE NÃO É O PETE"};
         String mensagem = "EU TENHO DOIS CACHORROS, PETE E REPETE, PETE MORREU, QUEM SOBROU?";
     
@@ -58,7 +65,9 @@ public class main {
             }
         } while (escolha == 1);
 
+
         //ATV 6
+
         String[] options = {"SOMA", "SUBTRAÇÃO", "MULTIPLICAÇÃO", "DIVISÃO"};
         int escolha2 = JOptionPane.showOptionDialog(null, "SELECIONE A OPERAÇÃO DESEJADA:", "CALCULADORA", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
 
