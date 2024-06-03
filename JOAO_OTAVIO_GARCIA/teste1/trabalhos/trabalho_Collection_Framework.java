@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Trabalho_Collection_Framework {
+public class queisso {
 
     public static void main(String[] args) {
         // Atividade 1
