@@ -1,6 +1,8 @@
 package segundobi.aulas.aulaquatro;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class GenericSample {
     
@@ -8,7 +10,6 @@ public class GenericSample {
 
         Teacher teacher = new Teacher();
         Student student = new Student();
-
 
         Teacher teacherAfterPrint = printClassName(teacher);
         Student studentAfterPrint = printClassName(student);
@@ -18,9 +19,11 @@ public class GenericSample {
 
         GenericBox<Teacher> boxWithTeacher = new GenericBox<>(new Teacher());
         GenericBox<Student> boxWithStudent = new GenericBox<>(studentAfterPrint);
+        GenericBox<Date> boxWithDate = new GenericBox<Date>(new Date());
 
         System.out.println(boxWithTeacher.getContent());
         System.out.println(boxWithStudent.getContent());
+        System.out.println(boxWithDate.getContent());
     }
     
     public static <T> T printClassName(T anyClass) {
