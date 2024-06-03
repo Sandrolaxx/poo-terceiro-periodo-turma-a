@@ -1,8 +1,8 @@
-package segundobimestre.listas.Classe;
+package segundobimestre.aulas.aulaQuatro;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
+import java.util.Comparator;
 
 public class ComparatorSample {
 
@@ -18,10 +18,13 @@ public class ComparatorSample {
         System.out.println("Sem ordenação:");
         cars.forEach(car -> System.out.println(car.getName() + " - " + car.getYear()));
 
+
         CarNameComparator nameComparator = new CarNameComparator();
 
         // Ordenando com ordenador personalizado
-        Collections.sort(cars, nameComparator);
+        //Collections.sort(cars, nameComparator);
+
+        cars = cars.stream().sorted().toList();
 
         System.out.println("\nOrdenado por nome:");
         cars.forEach(car -> System.out.println(car.getName() + " - " + car.getYear()));

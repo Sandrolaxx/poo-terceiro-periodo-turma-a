@@ -1,4 +1,4 @@
-package segundobimestre.listas.Classe;
+package segundobimestre.aulas.aulaQuatro;
 
 import java.util.Date;
 
