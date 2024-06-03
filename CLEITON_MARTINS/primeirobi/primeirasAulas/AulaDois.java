@@ -1,4 +1,4 @@
-package primeirobi;
+package primeirobi.primeirasAulas;
 
 public class AulaDois 
 {
