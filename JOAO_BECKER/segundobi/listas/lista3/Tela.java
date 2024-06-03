@@ -61,6 +61,7 @@ public class Tela extends JFrame{
         button2.addActionListener(this::button2);
         button3.addActionListener(this::button3);
         button4.addActionListener(this::button4);
+        button5.addActionListener(this::button5);
         button6.addActionListener(this::button6);
 
         add(button1);
@@ -129,7 +130,13 @@ public class Tela extends JFrame{
 
 //ATV5
 
-
+    public void button5(ActionEvent e){
+        String message = JOptionPane.showInputDialog(null,"Insira um numero positivo", "Atv5", JOptionPane.QUESTION_MESSAGE);
+        if(Integer.parseInt(message)<0){
+            throw new CustomExeption("Numero Negativo");
+        }
+    
+    }
 
 //ATV6
 
@@ -240,5 +247,3 @@ public class Tela extends JFrame{
         }
     }
 }
-
-
