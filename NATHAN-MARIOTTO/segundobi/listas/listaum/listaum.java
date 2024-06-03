@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.HashMap;
 
-public class main {
+public class listaum {
     public static void main(String[] args) {
         // Atividade 1
         ArrayList<String> colegas = new ArrayList<>();
