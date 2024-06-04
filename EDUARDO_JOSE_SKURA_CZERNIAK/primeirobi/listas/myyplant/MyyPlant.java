@@ -1,72 +1,118 @@
-package primeirobi.listas.myyplant;
+// package primeirobi.listas.myyplant;
+// import java.util.Date;
+// import java.lang.String;
 
-public class MyyPlant {
-    public static void main(String[] args) {
+// public class MyyPlant {
+//         public static void main(String[] args) {
 
-        Vendedor vendedorUm = new Vendedor();
-        Vendedor vendedorDois = new Vendedor();
+//                 // Cliente
 
-        vendedorUm.nome = "Paola";
-        vendedorUm.idade = 33;
-        vendedorUm.cidade = "Suntown";
-        vendedorUm.bairro = "Lalaland";
-        vendedorUm.rua = "Saint";
+//         Cliente clienteUm = new Cliente(null, null, null, null, null, null, null, null);
+//         Cliente clienteDois = new Cliente(null, null, null, null, null, null, null, null);
+        
+//         clienteUm.setNomeUsuario("Charles");
+//         clienteUm.setIdadeUsuario(22);
+//         clienteUm.setEstado("Rio de Janeiro");
+//         clienteUm.setCidade("Copacabana");
+//         clienteUm.setBairro("Tropicale");
+//         clienteUm.setRua("Josué");
+//         clienteUm.setNumero(15);
+//         clienteUm.setComplemento("Casa");
+        
+//         clienteDois.setNomeUsuario("Jennie");
+//         clienteDois.setIdadeUsuario(24);
+//         clienteDois.setEstado("Kaurent");
+//         clienteDois.setCidade("Southent");
+//         clienteDois.setBairro("Hennit");
+//         clienteDois.setRua("LLamour");
+//         clienteDois.setNumero(7);
+//         clienteDois.setComplemento("Apartamento");
+        
+//         String[] quantidadeClientes = new String[2];
+//         quantidadeClientes[0] =  clienteUm.nomeUsuario;
+//         quantidadeClientes[1] = clienteDois.nomeUsuario;
+        
+//         clienteUm.apresentarCliente();
+//         clienteDois.apresentarCliente();
+        
+//         clienteUm.apresentarEndereco();
+//         clienteDois.apresentarEndereco();
 
-        vendedorDois.nome = "Alec";
-        vendedorDois.idade = 40;
-        vendedorDois.cidade = "Mountaine";
-        vendedorDois.bairro = "Rivertown";
-        vendedorDois.rua = "Pier";
+//                 // Vendedor
 
-        String[] quantidadeVendedores = new String[2];
-        quantidadeVendedores[0] = vendedorUm.nome;
-        quantidadeVendedores[1] = vendedorDois.nome;
+//         Vendedor vendedorUm = new Vendedor(null, null, null, null, null, null, null, null, null, null, null);
+//         Vendedor vendedorDois = new Vendedor(null, null, null, null, null, null, null, null, null, null, null);
 
-        vendedorUm.calcularMedia();
-        vendedorUm.calcularBonus();
+//         vendedorUm.setNomeFuncionario("Paola");
+//         vendedorUm.setIdadeFuncionario(33);
+//         vendedorUm.setCidade("Suntown");
+//         vendedorUm.setBairro("Lalaland");
+//         vendedorUm.setRua("Saint");
 
+//         vendedorDois.setNomeFuncionario("Alec");
+//         vendedorDois.setIdadeFuncionario(40);
+//         vendedorDois.setCidade("Mountaine");
+//         vendedorDois.setBairro("Rivertown");
+//         vendedorDois.setRua("Pier");
 
-        Cliente clienteUm = new Cliente();
-        Cliente clienteDois = new Cliente();
+//         String[] quantidadeVendedores = new String[2];
+//         quantidadeVendedores[0] = vendedorUm.getNomeFuncionario();
+//         quantidadeVendedores[1] = vendedorDois.getNomeFuncionario();
 
-        clienteUm.nome = "Charles";
-        clienteUm.idade = 22;
-        clienteUm.cidade = "Copacabana";
-        clienteUm.bairro = "Tropicale";
-        clienteUm.rua = "Josué";
+//         vendedorUm.calcularMedia();
+//         vendedorUm.calcularBonus();
 
-        clienteDois.nome = "Jennie";
-        clienteDois.idade = 24;
-        clienteDois.cidade = "Southent";
-        clienteDois.bairro = "Hennit";
-        clienteDois.rua = "LLamour";
+//                 // Gerente
 
-        String[] quantidadeClientes = new String[2];
-        quantidadeClientes[0] =  clienteUm.nome;
-        quantidadeClientes[1] = clienteDois.nome;
+//         Gerente gerenteUm = new Gerente(null, null, null, null, null, null, null, null, null, null, null);
+//         Gerente gerenteDois = new Gerente(null, null, null, null, null, null, null, null, null, null, null);
 
-        clienteUm.apresentarCliente();
-        clienteDois.apresentarCliente();
+//         gerenteUm.setNomeGerente("Chaewon");
+//         gerenteUm.setIdade(23);
+//         gerenteUm.setNomeFantasia("EASY Coffee");
+//         gerenteUm.setCidade("Black Swane");
+//         gerenteUm.setBairro("Smarter Area");
+//         gerenteUm.setRua("Good Bones");
 
-        Loja lojaUm = new Loja();
+//         gerenteDois.setNomeGerente("Carpenter");
+//         gerenteDois.setIdade(20);
+//         gerenteDois.setNomeFantasia("X Espresso");
+//         gerenteDois.setCidade("Fruit Cako");
+//         gerenteDois.setBairro("Eletronic Mailen");
+//         gerenteDois.setRua("Red Feather");
 
-        lojaUm.nomeFantasia = "MyyPlant";
-        lojaUm.razaoSocial = "Estabelecimentos de Venda de Plantas Exóticas Gabriela";
-        lojaUm.cnpj = 777777777777l;
-        lojaUm.cidade = "Java Ville";
-        lojaUm.bairro = "Coffeel";
-        lojaUm.rua = "Bean1";
+//                 // Loja
 
-        lojaUm.quantidadeClientesInt = 2;
-        lojaUm.quantidadeVendedoresInt = 2;
+//         Loja lojaUm = new Loja(null, null, null, null, 
+//         null, null, null, null, null, null, null);
 
+//         lojaUm.setNomeFantasia("MyyPlant");
+//         lojaUm.setRazaoSocial("Estabelecimentos de Venda de Plantas Exóticas Gabriela");
+//         lojaUm.setCnpj("777777777777");
+//         lojaUm.setCidade("Java Ville");
+//         lojaUm.setBairro("Coffeel");
+//         lojaUm.setRua("Bean1");
 
-        lojaUm.apresentarLoja();
-        lojaUm.contarClientes();
-        lojaUm.contarVendedores();
+//         lojaUm.quantidadeClientesInt = 2;
+//         lojaUm.quantidadeVendedoresInt = 2;
+
+//         lojaUm.apresentarLoja();
+//         lojaUm.contarClientes();
+//         lojaUm.contarVendedores();
+
+//                 // Date
+
+//         Date date = new Date();
+//         long umDia = 86400000l;
+//         long msDaquiCincoDias = date.getTime() + (5 * umDia);
+//         Date dataDaquiCincoDias = new Date(msDaquiCincoDias);
+
+//         //Item
+
+//         //Pedido
 
 
 
         
-    }
-}
+//         }
+// }
