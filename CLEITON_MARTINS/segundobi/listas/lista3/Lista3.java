@@ -47,6 +47,9 @@ public class Lista3
         //Exercício 5 em CustomException.java
 
         //Exercício 6
+        String calc1 = JOptionPane.showInputDialog(frame,"digite o primeiro valor");
+        String calc2 = JOptionPane.showInputDialog(frame,"digite o segundo valor");
+
         String input = JOptionPane.showInputDialog(frame,"[1] - Soma\n[2] - Subtração\n[3] - Divisão\n[4] - Multiplicação","Calculadora",JOptionPane.QUESTION_MESSAGE);
 
         if (input == null) 
@@ -54,11 +57,16 @@ public class Lista3
             JOptionPane.showMessageDialog(frame,"Operação cancelada!");
         }
 
-        //trecho pego do chatgpt por conta da complexidade (provavelmente deve ser menos complexo do que a maneira que eu pensei)
         Integer calculadora;
+        Double calculo1;
+        Double calculo2;
+        String resultado = "";
+        
         try 
         {
             calculadora = Integer.parseInt(input);
+            calculo1 = Double.parseDouble(calc1);
+            calculo2 = Double.parseDouble(calc2);
         } 
         catch (NumberFormatException e) 
         {
@@ -69,20 +77,23 @@ public class Lista3
         switch (calculadora) 
         {
             case 1:
-                JOptionPane.showMessageDialog(frame,"Soma selecionada, informe o primeiro valor: ","Soma",JOptionPane.QUESTION_MESSAGE);
-                JOptionPane.showMessageDialog(frame,"Soma selecionada, informe o segundo valor: ","Soma",JOptionPane.QUESTION_MESSAGE);
+                resultado = String.valueOf(calculo1 + calculo2);
                 break;
             case 2:
-                JOptionPane.showMessageDialog(frame,"Subtração selecionada, informe o primeiro valor: ","Subtração",JOptionPane.QUESTION_MESSAGE);
-                JOptionPane.showMessageDialog(frame,"Subtração selecionada, informe o segundo valor: ","Subtração",JOptionPane.QUESTION_MESSAGE);
+                resultado = String.valueOf(calculo1 - calculo2);
                 break;
             case 3:
-                JOptionPane.showMessageDialog(frame,"Divisão selecionada, informe o primeiro valor: ","Divisão",JOptionPane.QUESTION_MESSAGE);
-                JOptionPane.showMessageDialog(frame,"Divisão selecionada, informe o segundo valor: ","Divisão",JOptionPane.QUESTION_MESSAGE);
+                if (calculo2 != 0) 
+                {
+                    resultado = String.valueOf(calculo1 / calculo2);
+                } 
+                else 
+                {
+                    resultado = "Erro: Divisão por zero!";
+                }
                 break;
             case 4:
-                JOptionPane.showMessageDialog(frame,"Multiplicação selecionada, informe o primeiro valor: ","Multiplicação",JOptionPane.QUESTION_MESSAGE);
-                JOptionPane.showMessageDialog(frame,"Multiplicação selecionada, informe o segundo valor: ","Multiplicação",JOptionPane.QUESTION_MESSAGE);
+                resultado = String.valueOf(calculo1 * calculo2);
                 break;
             default:
                 JOptionPane.showMessageDialog(frame,"Informe uma opção inválida");
