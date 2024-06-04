@@ -1,4 +1,5 @@
-package segundo_bimestre.Listas.lista1.lista1;
+package segundo_bimestre.
+ListasAulas.lista1;
 
 import java.util.PriorityQueue;
 

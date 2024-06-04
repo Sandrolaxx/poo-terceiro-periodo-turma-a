@@ -1,4 +1,4 @@
-package segundo_bimestre.lista3;
+package segundo_bimestre.ListasAulas.lista3;
 
 import javax.swing.JOptionPane;
 

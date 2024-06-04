@@ -1,4 +1,4 @@
-package segundo_bimestre.Listas.lista1.lista2;
+package segundo_bimestre.ListasAulas.lista2;
 
 import java.util.*;
 import java.util.stream.Collectors;
