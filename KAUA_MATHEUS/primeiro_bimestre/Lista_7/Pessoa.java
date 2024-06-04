@@ -1,4 +1,4 @@
-package KAUA_MATHEUS.primeiro_bimestre.Lista_6;
+package KAUA_MATHEUS.primeiro_bimestre.Lista_7;
 
 public abstract interface Pessoa{
 

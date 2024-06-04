@@ -22,6 +22,16 @@ public class Loja {
             }
 
 
+            public String getNomeLoja() {
+                return nomeLoja;
+            }
+
+
+            public void setNomeLoja(String nomeLoja) {
+                this.nomeLoja = nomeLoja;
+            }
+
+
             public int contarClientes(){
                 return this.listaClientes.size();
             }

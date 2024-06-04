@@ -5,11 +5,11 @@ public class Vendedor {
     private int idade;
     private Loja loja;
      String cidade;
-     String bairro;
-     String rua;
+    String bairro;
+  String rua;
     private double[] salarioLancamentos;
     private double salarioBase;
-     double salarioRecebido;
+   double salarioRecebido;
 
     public Vendedor(String nome, int idade, Loja loja, String cidade, String bairro, String rua, double[] salarioLancamentos, double salarioBase) {
         this.nome = nome;
