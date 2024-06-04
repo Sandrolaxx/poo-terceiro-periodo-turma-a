@@ -21,7 +21,7 @@ public class Funcionario {
     }
 
     public void receberSalario(double salario) {
-        // Armazenar o salário recebido no próximo índice disponível
+        
         for (int i = 0; i < salarioRecebido.length; i++) {
             if (salarioRecebido[i] == 0) {
                 salarioRecebido[i] = salario;

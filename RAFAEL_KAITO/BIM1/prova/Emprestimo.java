@@ -1,4 +1,4 @@
-package RAFAEL_KAITO.BIM1.prova;
+package BIM1.prova;
 
 import java.util.Date;
 import java.util.ArrayList;

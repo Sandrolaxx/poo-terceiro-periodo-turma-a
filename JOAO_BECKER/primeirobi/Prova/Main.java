@@ -1,4 +1,4 @@
-package JOAO_BECKER.primeirobi.Prova;
+package primeirobi.Prova;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.ArrayList;
