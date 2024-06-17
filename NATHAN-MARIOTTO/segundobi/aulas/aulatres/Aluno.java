@@ -1,4 +1,4 @@
-package segundobi.aulas.aulastres;
+package segundobi.aulas.aulatres;
 
 public class Aluno {
 
