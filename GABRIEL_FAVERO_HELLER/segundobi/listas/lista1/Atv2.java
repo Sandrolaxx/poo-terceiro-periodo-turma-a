@@ -25,7 +25,7 @@ public class Atv2 {
         numeros.add(10);
         numeros.add(15);
 
-        System.out.println("Qual numero quer pesquisar?");
+        System.out.println("Qual numero você quer pesquisar?");
         Integer verificarNumero = scanner.nextInt();
 
         if (numeros.contains(verificarNumero)) {
@@ -33,5 +33,6 @@ public class Atv2 {
         } else {
             System.out.println("O numero " + verificarNumero + " não esta na lista");
         }
+        scanner.close();
     }
 }
