@@ -30,7 +30,7 @@ public class QRCodeSample {
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setRequestProperty("Accept", "application/json");
-            //connection.setRequestProperty("Authorization", token);
+            connection.setRequestProperty("Authorization", token);
             connection.setDoOutput(true);
 
             try (OutputStream os = connection.getOutputStream()) {
