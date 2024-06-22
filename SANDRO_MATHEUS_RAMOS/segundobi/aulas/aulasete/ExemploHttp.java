@@ -5,12 +5,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import javax.swing.JOptionPane;
-
 public class ExemploHttp {
 
-    public static void main(String[] args) {
-
+    public static String getJsonData() {
         try {
             URL url = new URL("https://economia.awesomeapi.com.br/json/last/USD");
 
@@ -29,11 +26,10 @@ public class ExemploHttp {
             reader.close();
             connection.disconnect();
 
-            JOptionPane.showMessageDialog(null, response, "Cotação USD/BRL", 0);
+            return response.toString();
         } catch (Exception e) {
-            e.printStackTrace();
+            return null;
         }
-
     }
 
 }
