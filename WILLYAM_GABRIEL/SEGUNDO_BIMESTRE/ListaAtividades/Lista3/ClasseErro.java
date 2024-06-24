@@ -1,4 +1,4 @@
-package SEGUNDO_BIMESTRE.ListaAtividades.lista3;
+package SEGUNDO_BIMESTRE.ListaAtividades.Lista3;
 
 public class ClasseErro extends Exception {
     public ClasseErro(String message) {
