@@ -1,4 +1,4 @@
-package LUIZ_FELIPE_PAIVA.primerio_bimestre.lista06;
+package primerio_bimestre.lista06;
 
 import java.util.ArrayList;
 
