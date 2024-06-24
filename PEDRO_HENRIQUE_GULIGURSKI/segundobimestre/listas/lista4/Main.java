@@ -35,7 +35,20 @@ public class Main {
     }
 
     public static void listarConvenios() {
-        // finalizar
+        String[] options = {"Convenios Nacionais", "Convenios Estaduais", "Todos os Convenios"};
+        int choice = JOptionPane.showOptionDialog(null, "Selecione o tipo de convênio:",
+                "Seleção de Convênio", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
+                null, options, options[0]);
+
+        if (choice == 0) {
+            System.out.println(ListagemConvenio.getConvenio(0)); 
+        } else if (choice == 1) {
+            System.out.println(ListagemConvenio.getConvenio(1)); 
+        } else if (choice == 2) {
+            System.out.println(ListagemConvenio.getConvenio(2)); 
+        } else {
+            System.out.println("Operação cancelada pelo usuário.");
+        }
     }
 
     public static void consultarBoleto() {
