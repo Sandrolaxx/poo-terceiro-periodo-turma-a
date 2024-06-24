@@ -21,10 +21,12 @@ public class ComparatorSample {
         CarNameComparator nameComparator = new CarNameComparator();
 
         // Ordenando com ordenador personalizado
-        Collections.sort(cars, nameComparator);
+        // Collections.sort(cars, nameComparator);
+        cars.sort(nameComparator);
 
         System.out.println("\nOrdenado por nome:");
         cars.forEach(car -> System.out.println(car.getName() + " - " + car.getYear()));
+
     }
 
 }
