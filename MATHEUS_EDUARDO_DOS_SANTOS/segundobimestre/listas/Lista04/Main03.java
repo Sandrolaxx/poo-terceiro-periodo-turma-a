@@ -1,4 +1,4 @@
-package segundobimestre.listas.Main;
+package segundobimestre.listas.Lista04;
 
 import java.util.List;
 
