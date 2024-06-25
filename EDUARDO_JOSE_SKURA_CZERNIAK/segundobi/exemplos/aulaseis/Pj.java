@@ -1,15 +1,16 @@
-package segundobi.exemplos.aulaseis;
+// package segundobi.exemplos.aulaseis;
 
-public class Pj {
+// public class Pj implements IProcessarFolha{
     
-    private Double salario;
+//     private Double salario;
 
-    public Double getSalario() {
-        return salario;
-    }
+//     public Double getSalario() {
+//         return salario;
+//     }
 
-    public void setSalario(Double salario) {
-        this.salario = salario;
-}
+//     public void setSalario(Double salario) {
+//         this.salario = salario;
+    
+// }
 
-}
+// }
