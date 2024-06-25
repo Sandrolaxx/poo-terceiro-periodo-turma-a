@@ -69,12 +69,6 @@ public class list2Main{
         // Crie um programa que conte quantas vezes cada palavra única aparece em uma lista de strings.
         // Utilize a Stream API para processar os dados. Lista de palavras("se", "talvez", "hoje" "sábado", "se", "quarta", "sábado")
 
-        // EM DESENVOLVIMENTO
-        // EM DESENVOLVIMENTO
-        // EM DESENVOLVIMENTO
-        // EM DESENVOLVIMENTO
-
-
         List<String> listWords = new ArrayList<>();
 
         listWords.add("se");
@@ -85,32 +79,15 @@ public class list2Main{
         listWords.add("quarta");
         listWords.add("sábado");
 
-        List<String> vazia = new ArrayList<>();
-
-        List<String> listWordsRepet = listWords.stream().
-        
-        List<String> listWordsRepet = listWords.stream()
-                .distinct()
-                .forEach(palavra -> {
-                    long quantidade = listWords.stream()
-                            .filter(p -> p.equals(palavra))
-                            .count();
-                    System.out.println(palavra + ": " + quantidade);
-                });
+        Map<String, Long> wordsRepet = listWords.stream()
+        .collect(Collectors.groupingBy(String::toString, Collectors.counting())); 
     
+        System.out.println("\nAt. 3 - Exibindo palavras e vezes repetida na lista:");
 
-
-        System.out.println("\nAt. 3 - Exibindo palavras:");
-
-        for (String word : listWords) {
-            System.out.println(word);
+        for (Map.Entry<String, Long> mapWordsRepet : wordsRepet.entrySet()) {
+            System.err.println(mapWordsRepet.getKey() + " - " + mapWordsRepet.getValue());
         }
 
-        // .filter(word -> listWords.contains(word))
-        // .map(word -> word + cont)
-        //  // passar o contador de vezes que repetiu 
-        // .toList();
-                      
 
 
         // ATIVIDADE 4
