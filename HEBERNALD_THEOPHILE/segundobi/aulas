@@ -1,0 +1,9 @@
+public class StremApi {
+
+    public static void(String[]args){
+
+        List<String> sacolaFrutas = new ArrayList<>();
+
+        sacolaFrutas.add(e:limão )
+    }
+}
