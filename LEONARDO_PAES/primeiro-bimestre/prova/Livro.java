@@ -1,4 +1,4 @@
-package LEONARDO_PAES.primeiro_bimestre.prova;
+package prova;
 
 import java.util.Date;
 
