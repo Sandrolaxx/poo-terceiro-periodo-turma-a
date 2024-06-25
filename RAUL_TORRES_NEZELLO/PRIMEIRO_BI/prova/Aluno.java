@@ -1,4 +1,4 @@
-package RAUL_TORRES_NEZELLO.PRIMEIRO_BI.prova;
+package PRIMEIRO_BI.prova;
 
 public class Aluno {
     private String nome;
