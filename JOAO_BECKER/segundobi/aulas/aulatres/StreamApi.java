@@ -3,8 +3,6 @@ package segundobi.aulas.aulatres;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 public class StreamApi {
 
@@ -12,15 +10,15 @@ public class StreamApi {
 
         List<String> sacolaFrutas = new ArrayList<>();
 
-        sacolaFrutas.add("1");
-        sacolaFrutas.add("2");
-        sacolaFrutas.add("1");
-        sacolaFrutas.add("3");
+        sacolaFrutas.add("🍋");
+        sacolaFrutas.add("🍎");
+        sacolaFrutas.add("🍋");
+        sacolaFrutas.add("🍇");
 
         sacolaFrutas.forEach(fruta -> System.out.print(fruta));
 
         List<String> listaAlterada = sacolaFrutas.stream()
-                .filter(fruta -> fruta.equals("1"))
+                .filter(fruta -> fruta.equals("🍋"))
                 .map(fruta -> fruta.concat(" --- Fruta show"))
                 .toList();
 
@@ -29,12 +27,12 @@ public class StreamApi {
         listaAlterada.forEach(fruta -> System.out.println(fruta));
 
         boolean existeLimao = sacolaFrutas.stream()
-                .allMatch(fruta -> fruta.equals("1"));
+                .allMatch(fruta -> fruta.equals("🍋"));
 
         System.out.println(existeLimao);
 
         Optional<String> limao = sacolaFrutas.stream()
-                .filter(fruta -> fruta.equals("1"))
+                .filter(fruta -> fruta.equals("🍋"))
                 .findFirst();
 
         if (limao.isPresent()) {
@@ -56,7 +54,7 @@ public class StreamApi {
                 new Aluno("Schiestl", 27),
                 new Aluno("Raul", 20),
                 new Aluno("Pedro", 18));
-
+        
         Integer totalIdade = alunos.stream()
                 .map(aluno -> aluno.getAge())
                 .reduce(0, (vl1, vl2) -> vl1 + vl2);
