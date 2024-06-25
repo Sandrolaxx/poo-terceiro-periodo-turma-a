@@ -1,6 +1,5 @@
-package primeirobi;
+package primeirobi.primeirasAulas;
 
-import java.time.LocalDate;
 import java.util.Scanner;
 
 public class teste 

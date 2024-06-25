@@ -1,6 +1,4 @@
-package primeirobi;
-
-import java.time.LocalDate;
+package primeirobi.donaGabrielinha;
 
 import java.util.Scanner;
 
@@ -8,13 +6,9 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-import java.util.Arrays;
+import java.util.Date;
 
-import java.util.stream.Collectors;
-
-import java.util.stream.Stream;
-
-public class Calculadora 
+public class Main 
 {
     public static void main(String[] args) 
     {
@@ -167,16 +161,32 @@ public class Calculadora
 		        System.out.println("Insira uma alternativa válida!");
             break;
         }
+        
+       Vendedor vendedorUm = new Vendedor();
 
-        List<String> nomeFlores = Arrays.asList("Violeta", "Flor de Liz", "Gira Sol", "Rosa", "Margarida");
+        CalculoPessoa totaClientes = new CalculoPessoa();
+        
+        /*totalClientes.contaCliente = 0;*/
 
-        List<String> filtroFlores = nomeFlores.stream()
-            .filter(flor -> flor.startsWith("V"))
-            .sorted()
-            .collect(Collectors.toList());
+        CalculoPessoa totalVendedores = new CalculoPessoa();
 
-        filtroFlores.forEach(System.out::println);
+        /*totalVendedores.contaVendedor = 0;*/
 
-        scanner.close();
-    }   
+        Date dataAtual = new Date();
+        Date dataSemHora = new Date(dataAtual.getYear(), dataAtual.getMonth(), dataAtual.getDay());
+
+        Date cincoAbril = new Date(124, 3 , 5);
+        Long epochCincroAbril = cincoAbril.getTime();
+
+        Long diaAtualEmMilissegundos = dataAtual.getTime();
+        Long diaEmMs = 86400000l;
+
+        System.out.println("dataAtual" + dataAtual);
+        System.out.println("dataSemHora" + dataSemHora);
+
+        System.out.println("epochCincoAbril" + epochCincroAbril);
+        System.out.println("diaAtualEmMilissegundos" + diaAtualEmMilissegundos);
+
+        System.out.println((dataAtual.getTime() - cincoAbril.getTime()) / diaEmMs);
+    }
 }
