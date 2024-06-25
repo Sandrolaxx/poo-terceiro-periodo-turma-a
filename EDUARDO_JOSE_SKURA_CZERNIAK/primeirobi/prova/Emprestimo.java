@@ -1,30 +1,30 @@
-package EDUARDO_JOSE_SKURA_CZERNIAK.primeirobi.prova;
+// package EDUARDO_JOSE_SKURA_CZERNIAK.primeirobi.prova;
 
-import java.util.Date;
+// import java.util.Date;
 
-public class Emprestimo extends Aluno{
+// public class Emprestimo extends Aluno{
 
 
-    String numeroEmprestimo;
-    String empNome;
-    String empId;
-    String empCurso;
+//     String numeroEmprestimo;
+//     String empNome;
+//     String empId;
+//     String empCurso;
 
-    Long diaDate = 86400000l;
-    Date horarioAgora = new Date();
-    Long seteDias = diaDate * 7;
+//     Long diaDate = 86400000l;
+//     Date horarioAgora = new Date();
+//     Long seteDias = diaDate * 7;
 
-    public Emprestimo(String tituloLivro, String autorLivro, String disponibilidadeLivro, String numeroEmprestimo,
-            String empNome, String empId, String empCurso, Long diaDate, Date horarioAgora, Long seteDias) {
-        super(tituloLivro, autorLivro, disponibilidadeLivro, empCurso, empCurso, empCurso, empCurso, seteDias, null, seteDias);
-        this.numeroEmprestimo = numeroEmprestimo;
-        this.empNome = empNome;
-        this.empId = empId;
-        this.empCurso = empCurso;
-        this.diaDate = diaDate;
-        this.horarioAgora = horarioAgora;
-        this.seteDias = seteDias;
-    }
+//     public Emprestimo(String tituloLivro, String autorLivro, String disponibilidadeLivro, String numeroEmprestimo,
+//             String empNome, String empId, String empCurso, Long diaDate, Date horarioAgora, Long seteDias) {
+//         super(tituloLivro, autorLivro, disponibilidadeLivro, empCurso, empCurso, empCurso, empCurso, seteDias, null, seteDias);
+//         this.numeroEmprestimo = numeroEmprestimo;
+//         this.empNome = empNome;
+//         this.empId = empId;
+//         this.empCurso = empCurso;
+//         this.diaDate = diaDate;
+//         this.horarioAgora = horarioAgora;
+//         this.seteDias = seteDias;
+//     }
 
     
 
@@ -32,9 +32,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public String getNumeroEmprestimo() {
-        return numeroEmprestimo;
-    }
+//     public String getNumeroEmprestimo() {
+//         return numeroEmprestimo;
+//     }
 
 
 
@@ -42,9 +42,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public void setNumeroEmprestimo(String numeroEmprestimo) {
-        this.numeroEmprestimo = numeroEmprestimo;
-    }
+//     public void setNumeroEmprestimo(String numeroEmprestimo) {
+//         this.numeroEmprestimo = numeroEmprestimo;
+//     }
 
 
 
@@ -52,9 +52,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public String getEmpNome() {
-        return empNome;
-    }
+//     public String getEmpNome() {
+//         return empNome;
+//     }
 
 
 
@@ -62,9 +62,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public void setEmpNome(String empNome) {
-        this.empNome = empNome;
-    }
+//     public void setEmpNome(String empNome) {
+//         this.empNome = empNome;
+//     }
 
 
 
@@ -72,9 +72,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public String getEmpId() {
-        return empId;
-    }
+//     public String getEmpId() {
+//         return empId;
+//     }
 
 
 
@@ -82,9 +82,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public void setEmpId(String empId) {
-        this.empId = empId;
-    }
+//     public void setEmpId(String empId) {
+//         this.empId = empId;
+//     }
 
 
 
@@ -92,9 +92,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public String getEmpCurso() {
-        return empCurso;
-    }
+//     public String getEmpCurso() {
+//         return empCurso;
+//     }
 
 
 
@@ -102,9 +102,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public void setEmpCurso(String empCurso) {
-        this.empCurso = empCurso;
-    }
+//     public void setEmpCurso(String empCurso) {
+//         this.empCurso = empCurso;
+//     }
 
 
 
@@ -112,9 +112,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public Long getDiaDate() {
-        return diaDate;
-    }
+//     public Long getDiaDate() {
+//         return diaDate;
+//     }
 
 
 
@@ -122,13 +122,13 @@ public class Emprestimo extends Aluno{
 
 
 
-    public void setDiaDate(Long diaDate) {
-        this.diaDate = diaDate;
-    }
+//     public void setDiaDate(Long diaDate) {
+//         this.diaDate = diaDate;
+//     }
 
-    public void setHorarioAgora(Date horarioAgora) {
-        this.horarioAgora = horarioAgora;
-    }
+//     public void setHorarioAgora(Date horarioAgora) {
+//         this.horarioAgora = horarioAgora;
+//     }
 
 
 
@@ -136,9 +136,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public Long getSeteDias() {
-        return seteDias;
-    }
+//     public Long getSeteDias() {
+//         return seteDias;
+//     }
 
 
 
@@ -146,9 +146,9 @@ public class Emprestimo extends Aluno{
 
 
 
-    public void setSeteDias(Long seteDias) {
-        this.seteDias = seteDias;
-    }
+//     public void setSeteDias(Long seteDias) {
+//         this.seteDias = seteDias;
+//     }
 
 
 
@@ -156,21 +156,21 @@ public class Emprestimo extends Aluno{
 
 
 
-    public void processoEmprestimo (){
-            System.out.print("O número do processo é de ");
-            System.out.print(numeroEmprestimo);
-            System.out.print(", realizado no horário ");
-            System.out.print(new Date());
-            System.out.print(", pelo aluno ");
-            System.out.print(empNome);
-            System.out.print(", do id ");
-            System.out.print(empId);
-            System.out.print(", do curso de ");
-            System.out.print(empCurso);
-            System.out.println("");
+//     public void processoEmprestimo (){
+//             System.out.print("O número do processo é de ");
+//             System.out.print(numeroEmprestimo);
+//             System.out.print(", realizado no horário ");
+//             System.out.print(new Date());
+//             System.out.print(", pelo aluno ");
+//             System.out.print(empNome);
+//             System.out.print(", do id ");
+//             System.out.print(empId);
+//             System.out.print(", do curso de ");
+//             System.out.print(empCurso);
+//             System.out.println("");
 
-        }
+//         }
 
 
 
-}
+// }

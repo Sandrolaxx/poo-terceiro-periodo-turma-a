@@ -1,28 +1,54 @@
-package primeirobi.listas.myyplant;
+// package primeirobi.listas.myyplant;
 
-public class Loja {
+// public class Loja extends DadosFuncionario{
     
-    String nomeFantasia;
-    String razaoSocial;
-    Long cnpj;
-    String cidade;
-    String bairro;
-    String rua;
+
+//     public Loja(String estado, String cidade, String bairro, String rua, Integer numero, String complemento,
+//             String nomeFuncionario, Integer idadeFuncionario, String nomeFantasia, String razaoSocial, String cnpj) {
+//         super(estado, cidade, bairro, rua, numero, complemento, nomeFuncionario, idadeFuncionario, nomeFantasia, razaoSocial,
+//                 cnpj);
+//     }
+
+//     private Vendedor[] vendedores;
+
+//     private Cliente[] clientes;
+
+//     public int quantidadeClientesInt;
+
+//     public int quantidadeVendedoresInt;
+
+//     public void contarClientes( ){
+//         System.out.println("A quantidade de clientes da empresa " + getNomeFantasia() + " é de " + clientes);
+//     }
+
+//     public void contarVendedores( ){
+//         System.out.println("A quantidade de vendedores da empresa " + getNomeFantasia() + " é de " + vendedores);
+//     } 
+
+//     public void apresentarLoja( ){
+//         System.out.println("O nome da empresa é " + getNomeFantasia() + ", do cnpj " + getCnpj() + ", da cidade ");
+//         System.out.print(getCidade() + ", do bairro " + getBairro() + " e rua " + getRua());
+//     }
+
+//     public Vendedor[] getVendedores() {
+//         return vendedores;
+//     }
+
+//     public void setVendedores(Vendedor[] vendedores) {
+//         this.vendedores = vendedores;
+//     }
+
+//     public Cliente[] getClientes() {
+//         return clientes;
+//     }
+
+//     public void setClientes(Cliente[] clientes) {
+//         this.clientes = clientes;
+//     } 
     
-    Integer quantidadeClientesInt;
-    Integer quantidadeVendedoresInt;
+//     @Override
+//     public void setRua(String rua) {
+//         super.setRua(rua);
+//     }
 
-    public void contarClientes( ){
-        System.out.println("A quantidade de clientes da empresa " + nomeFantasia + " é de " + quantidadeClientesInt);
-    }
-
-    public void contarVendedores( ){
-        System.out.println("A quantidade de vendedores da empresa " + nomeFantasia + " é de " + quantidadeVendedoresInt);
-    } 
-
-    public void apresentarLoja( ){
-        System.out.println("O nome da empresa é " + nomeFantasia + ", do cnpj " + cnpj + ", da cidade ");
-        System.out.print(cidade + ", do bairro " + bairro + " e rua " + rua);
-    } 
-
-}
+// }
