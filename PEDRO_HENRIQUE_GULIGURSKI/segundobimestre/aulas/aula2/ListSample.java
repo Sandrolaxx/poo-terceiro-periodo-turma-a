@@ -1,4 +1,4 @@
-package segundobimestre.aulas.aula2;
+package aulas.aula2;
 
 import java.util.ArrayList;
 import java.util.List;
