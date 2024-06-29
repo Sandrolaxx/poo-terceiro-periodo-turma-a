@@ -1,4 +1,4 @@
-package segundobi.provaa;
+package MATHEUS_HENRIQUE_SIMONETTO.segundobi.provaa;
 
 import javax.swing.JOptionPane;
 import java.io.BufferedReader;

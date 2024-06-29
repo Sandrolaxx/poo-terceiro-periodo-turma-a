@@ -1,3 +1,49 @@
+# Destaques - Geral✨
+
+Abaixo, os melhores alunos, apresentando um domínio do conteúdo abordado, suas contribuições são verdadeiramente dignas de reconhecimento e admiração.
+
+* **Gabriel Favero Heller**
+* **Gabriel Felipe Kuhn Schiestl**
+* **Heitor Miguel Foltran Marcon**
+* João Vitor Montipó Becker
+* Raul Torres Nezello
+* Juan Gabriel Garcia
+* Pedro Henrique Silva Guligurski
+* Kiury Woyciechowski Mariano
+
+> Todos com nota superior a 9,3*
+
+Parabéns a todos, continuem assim que estão no caminho certo🚀
+
+---
+
+# Melhores testemunhos🗣
+
+![Captura de tela de 2024-06-25 10-40-09](https://github.com/Sandrolaxx/poo-terceiro-periodo-turma-c/assets/61207420/ee9fed14-8842-40a5-ad97-3b431f1b3620)
+
+# Destaques do Repo - Segundo BI🏆
+
+Aqui está a lista dos principais colaboradores deste repositório no segundo bimestre. Eles se destacaram pela excelência de suas contribuições, dedicação constante e entendimento abrangente dos conceitos discutidos.
+
+* Gabriel Favero Heller
+* Gabriel Felipe Kuhn Schiestl
+* Gustavo Muller De Araujo
+* Heitor Miguel Foltran Marcon
+* Jean Luca Gonçalves
+* João Vitor Montipó Becker
+* Juan Gabriel Garcia
+* Kauã Matheus Da Silva
+* Kiury Woyciechowski Mariano
+* Leonardo Paes
+* Luiz Felipe Barbosa Paiva
+* Nathan Henrique Mariotto Ritz
+* Pedro Henrique Silva Guligurski
+* Raul Torres Nezello
+
+Mee a turma toda é destaque quase😅
+
+---
+
 # Destaques do Repo - Primeiro BI🏆
 
 Abaixo a lista dos melhores alunos que colaboram com este repositório. Os alunos se destacaram na qualidade de suas entregas, comprometimento em sala e compreensão do conteúdo de Programação Orientada a Objetos.
